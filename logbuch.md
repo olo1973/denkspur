@@ -3,6 +3,15 @@
 > Formloses Arbeitstagebuch, neueste Einträge zuerst. Kein Ersatz für die
 > Spur — nur der billigste Wiedereinstieg nach einer Pause.
 
+## 2026-07-07 — Veröffentlicht
+
+Nach Abnahme durch den Autor als öffentliches Repo auf GitHub gestellt
+(https://github.com/olo1973/denkspur). Die privaten Struktur-Standards des
+Autors wurden im Gegenzug auf ihr persönliches Delta eingedampft und
+verweisen jetzt hierher — die Konsequenz aus
+[Entscheidung 0001](entscheidungen/0001-synthese-zweier-quellen.md) ist
+damit umgesetzt: eine Wahrheit, ein Ort.
+
 ## 2026-07-06 — Review abgeschlossen (v1.2)
 
 Die restlichen Review-Befunde 7–13 umgesetzt: einheitliches Frontmatter
