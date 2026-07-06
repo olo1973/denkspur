@@ -11,6 +11,8 @@ stand: 2026-07-06
 > sie nachschlägt: erst das Problem, dann die Lösung, Schritt für Schritt,
 > mit einem durchgängigen Beispiel. Die knappe Referenz steht in
 > [`methode/`](methode/); die Kurzfassung für Agenten in [`AGENTS.md`](AGENTS.md).
+> Maßgeblich ist `methode/` — Leitfaden und Agenten-Kurzfassung sind
+> abgeleitete Darstellungen derselben Regeln.
 
 ## 1. Das Problem: Projekte vergessen
 
@@ -166,7 +168,8 @@ Setzt um: [Entscheidung 0009](../entscheidungen/0009-merkliste.md)
 
 ## Design-Gate
 - [ ] Entwurf (Stern am Rezept, Listenansicht) in Figma skizziert
-- [ ] Entwurf visuell abgenommen → Link: (Figma-Link)
+- [ ] Entwurf visuell abgenommen
+      → Beleg: ../ergebnisse/abnahmen/merkliste-entwurf.png
 
 ## Aufgaben
 - [ ] Favoriten-Zustand in localStorage speichern
@@ -180,7 +183,9 @@ Medium abgenommen — ein Figma-Entwurf, notfalls ein Bild-Mockup. Ein „der
 Stern ist zu dominant" kostet am Bild fünf Minuten; am fertigen Code kostet
 es einen Nachmittag. Erst nach der visuellen Abnahme beginnt die
 Code-Umsetzung. (Für einen umbenannten Button braucht niemand Figma — das
-Gate greift, wo Layout oder Fluss neu entstehen.)
+Gate greift, wo Layout oder Fluss neu entstehen.) Der abgenommene Stand wird
+als Bild unter `ergebnisse/abnahmen/` versioniert — ein bloßer Figma-Link
+altert und ist für Dritte oft unzugänglich.
 
 ### Station 5: Die Umsetzung (Checkboxen wandern)
 
@@ -194,9 +199,10 @@ dauerhaft nachvollziehbar.
 Zwei Hilfsdateien halten das Ganze übersichtlich, beide billig:
 
 - **`uebersicht.md`** — drei Tabellen (Ideen, Entscheidungen, Pläne) mit
-  Status und Datum, funktioniert als To-do-Tafel. Sie wird aus den
-  Artefakt-Köpfen **komplett neu generiert**, nie von Hand geflickt — die
-  Artefakte bleiben die einzige Wahrheit.
+  Status und Datum, funktioniert als To-do-Tafel. Sie wird per Skript
+  (`skripte/uebersicht-generieren.ps1` bzw. `.sh`) aus den Artefakt-Köpfen
+  **komplett neu generiert**, nie von Hand geflickt — die Artefakte bleiben
+  die einzige Wahrheit, und die Fleißarbeit kostet weder Zeit noch Tokens.
 - **`logbuch.md`** — ein formloses Arbeitstagebuch, neueste Einträge zuerst.
   Der billigste Wiedereinstieg nach zwei Wochen Pause.
 

@@ -13,8 +13,10 @@ Setzt um: [Entscheidung NNNN](../entscheidungen/NNNN-name.md)
 
 <!-- Nur bei Vorhaben mit neuer Benutzeroberfläche; sonst Abschnitt löschen. -->
 
-- [ ] Design-Entwurf erstellt (Figma / Mockup / Skizze) → Link: <hier>
+- [ ] Design-Entwurf erstellt (Figma / Mockup / Skizze)
 - [ ] Entwurf visuell abgenommen
+      → Beleg (versioniertes Bild): ../ergebnisse/abnahmen/<datei>.png
+      → Figma-Link (optional, ersetzt den Beleg nicht): <link>
 
 ## Aufgaben
 

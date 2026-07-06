@@ -27,8 +27,9 @@ nachvollziehbaren Lebenslauf.
 | [`ideen/`](ideen/), [`entscheidungen/`](entscheidungen/), [`plaene/`](plaene/) | denkspur wendet die Methode auf sich selbst an — hier liegen die eigenen Gründungsentscheidungen |
 | [`uebersicht.md`](uebersicht.md) | Generierter Statusindex über alle Artefakte |
 | [`logbuch.md`](logbuch.md) | Formloses Arbeitstagebuch, neueste Einträge zuerst |
-| [`starter/`](starter/) | Kopierbares Skelett für den eigenen Projektstart |
+| [`starter/`](starter/) | Kopierbares Skelett für den eigenen Projektstart (inkl. Vorlagen und Skripten) |
 | [`AGENTS.md`](AGENTS.md) | Kurzreferenz für KI-Agenten, die in einem denkspur-Projekt arbeiten |
+| [`CHANGELOG.md`](CHANGELOG.md) | Versionen mit „Adopter-Migration"-Hinweisen |
 
 ## Schnellstart
 
@@ -51,7 +52,17 @@ denkspur ist eine Synthese aus zwei Quellen:
   Datenklassen-Regeln und die Solo/Team-Skalierung.
 
 Warum und wie beides zusammengeführt wurde, dokumentiert — methodengerecht —
-[Entscheidung 0001](entscheidungen/0001-synthese-zweier-quellen.md).
+[Entscheidung 0001](entscheidungen/0001-synthese-zweier-quellen.md); die
+formale Attribution steht in [`NOTICE`](NOTICE).
+
+**Ehrlichkeitshinweis zur eigenen Spur:** Die Entscheidungen 0001–0003
+entstanden gebündelt in der Gründungssitzung am 2026-07-06 — sie
+dokumentieren echte Abwägungen, aber keine über Zeit gereiften Fäden. Die
+Spur unter Realbedingungen beginnt mit
+[Entscheidung 0004](entscheidungen/0004-konsequenzen-erstes-review.md), den
+Konsequenzen aus dem ersten kritischen Review. Zustände wie `verworfen` und
+`abgelehnt` werden hier erst vorkommen, wenn sie wirklich eintreten — eine
+inszenierte Historie wäre das Gegenteil dessen, was die Methode verspricht.
 
 ## Lizenz
 

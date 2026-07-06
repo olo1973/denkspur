@@ -36,9 +36,13 @@ Benutzeroberfläche, beschlossen in
 - Der Plan eines UI-Vorhabens enthält vor den Umsetzungs-Aufgaben ein
   explizites Gate: **„Design-Entwurf visuell abgenommen"**.
 - Der Entwurf entsteht im günstigsten tauglichen Medium — Figma, ein
-  Bild-Mockup, notfalls eine ASCII-Skizze — und wird im Plan **verlinkt** wie
-  jedes andere Artefakt (Figma-Link oder exportiertes Bild unter
-  `_zwischenstand/`).
+  Bild-Mockup, notfalls eine ASCII-Skizze.
+- **Der abgenommene Stand wird als Bild exportiert und versioniert**, unter
+  `ergebnisse/abnahmen/`, und im Plan verlinkt wie jedes andere Artefakt.
+  Ein Figma-Link darf zusätzlich stehen, ersetzt den versionierten Beleg
+  aber nicht: Externe Links altern und sind für Dritte oft unzugänglich.
+  `_zwischenstand/` ist dafür tabu — der Ordner ist wegwerfbar und
+  typischerweise gitignored (Kapitel 3.5).
 - Erst nach der visuellen Abnahme beginnt die Code-Umsetzung. Iteration am
   Bild kostet Minuten; Iteration am Code kostet Stunden und hinterlässt
   Altlasten.
@@ -73,11 +77,16 @@ solo Overhead wären, tragen dort die Zusammenarbeit.
 - **Einstieg:** den Inhalt von [`starter/`](../starter/) ins eigene Projekt
   kopieren, Platzhalter füllen, erste Idee anlegen. Der Leitfaden führt durch
   den ersten kompletten Durchlauf.
-- **Aktualisierung:** Eine neue denkspur-Version wird durch erneutes Kopieren
-  der Starter-Inhalte übernommen (Vorlagen, `AGENTS.md`-Kurzreferenz); die
-  eigenen Artefakte — Ideen, Entscheidungen, Pläne, Inhalte — bleiben
-  unberührt. Eigene Abweichungen von der Methode sind erlaubt und werden, der
-  Methode gemäß, als eigenes ADR festgehalten.
+- **Aktualisierung:** Vor einem Update das
+  [`CHANGELOG.md`](../CHANGELOG.md) lesen — jede Version nennt in der Zeile
+  „Adopter-Migration" die betroffenen Starter-Dateien. Nur diese werden
+  übernommen (typisch: `_templates/`, `skripte/`). **Projektspezifisch
+  angepasste Dateien — insbesondere `AGENTS.md` und `README.md` — nie blind
+  überschreiben**; dort wird nur der Methoden-Block angeglichen, die harten
+  Projektregeln bleiben unangetastet. Der Versionsmarker am Ende der
+  Starter-`AGENTS.md` zeigt, auf welchem Stand ein Projekt ist. Eigene
+  Abweichungen von der Methode sind erlaubt und werden, der Methode gemäß,
+  als eigenes ADR festgehalten.
 
 ## Verknüpfungen
 

@@ -29,10 +29,13 @@ Dieses Projekt folgt [denkspur](https://github.com/<owner>/denkspur).
    neue ADRs fortgeschrieben, nie umgeschrieben.
 4. **Vokabular:** `Eltern-Idee:` · `Befördert zu:`/`Hervorgegangen aus:` ·
    `Ergänzt:`/`Ergänzt durch:` · `Ersetzt:`/`Ersetzt durch:` · `Setzt um:`.
-5. **Übersicht:** `uebersicht.md` nach jeder Spur-Änderung komplett aus den
-   Artefakt-Köpfen regenerieren, „Stand:" stempeln.
+5. **Übersicht per Skript:** `uebersicht.md` nach jeder Spur-Änderung mit
+   `skripte/uebersicht-generieren.ps1` (bzw. `.sh`) regenerieren — nie von
+   Hand schreiben.
 6. **Design-Gate:** Pläne für Vorhaben mit neuer Oberfläche enthalten das
-   Gate „Design-Entwurf visuell abgenommen" vor den Umsetzungs-Aufgaben.
+   Gate „Design-Entwurf visuell abgenommen" vor den Umsetzungs-Aufgaben;
+   der abgenommene Stand wird als Bild unter `ergebnisse/abnahmen/`
+   versioniert und im Plan verlinkt.
 7. **Namensregeln:** kleingeschrieben, bindestrich-getrennt, keine
    Umlaute/ß/Leerzeichen in Dateinamen; Querverweise als echte Links.
 
@@ -47,3 +50,9 @@ Dieses Projekt folgt [denkspur](https://github.com/<owner>/denkspur).
 ## Befehle
 
 <!-- Bei Code-Projekten: Build, Test, Run — was der Agent sonst raten müsste. -->
+
+---
+
+Methoden-Block oben: abgeleitete Kurzfassung; maßgeblich ist `methode/` im
+denkspur-Repo. Vor einem Update dessen CHANGELOG lesen („Adopter-Migration").
+denkspur-Stand: **v1.1**

@@ -7,6 +7,8 @@ tags: [methode, herkunft]
 
 # 0001: Synthese zweier Quellen zu einer Methode
 
+Ergänzt durch: [Entscheidung 0004](0004-konsequenzen-erstes-review.md)
+
 ## Kontext
 
 Es existieren zwei unabhängig entstandene, jeweils bewährte Ansätze:

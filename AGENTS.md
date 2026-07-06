@@ -14,11 +14,14 @@ an. Für Agenten, die hier (oder in einem denkspur-Projekt) arbeiten, gilt:
    Vorschläge dürfen in place reifen.
 3. **Änderungen an der Methode selbst** laufen durch den eigenen Lebenslauf:
    Idee → ADR unter `entscheidungen/` → Plan. Keine stillen Methoden-Edits.
-4. **Übersicht ist generiert:** `uebersicht.md` nach jeder Spur-Änderung
-   komplett aus den Artefakt-Köpfen neu erzeugen (drei Tabellen, „Stand:"
-   stempeln), nie von Hand flicken.
+4. **Übersicht per Skript:** `uebersicht.md` nach jeder Spur-Änderung mit
+   `starter/skripte/uebersicht-generieren.ps1 -Pfad .` (bzw. `.sh .`)
+   regenerieren — nie von Hand schreiben oder flicken.
 5. **Datenklassen:** Keine sensiblen oder persönlichen Daten in dieses Repo —
    es ist öffentlich. Vor jedem Commit prüfen: Ableitung ja, Original nein.
+6. **Kanon:** `methode/` ist die maßgebliche Fassung. `leitfaden.md`, diese
+   Datei und `starter/AGENTS.md` sind abgeleitete Renderings — bei
+   Widerspruch gilt `methode/`, behoben wird im Rendering.
 
 ## Der Lebenslauf (Kurzform)
 

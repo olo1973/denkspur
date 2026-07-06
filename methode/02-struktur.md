@@ -39,6 +39,8 @@ projektname/
 │   └── 01-<thema>.md
 ├── 02-<bereich>/             ← weiterer Arbeitsbereich
 ├── ergebnisse/               ← erzeugte Artefakte (Zusage 5: Ergebnis)
+│   └── abnahmen/             ← versionierte Abnahme-Belege, z. B. Design-Entwürfe (4.2)
+├── skripte/                  ← Hilfsskripte, z. B. Übersicht generieren (3.4)
 ├── _templates/               ← Vorlagen für Idee, Entscheidung, Plan, Notiz
 └── _archiv/                  ← stillgelegt, aber aufbewahrt (nichts wird gelöscht)
 ```

@@ -1,0 +1,11 @@
+denkspur
+Copyright (c) 2026 Oliver Lowens
+
+Dieses Werk enthaelt konzeptionelle Uebernahmen aus decision-trail
+(https://github.com/ckluth/decision-trail), Copyright (c) ckluth,
+veroeffentlicht unter der MIT-Lizenz: der Gedanken-Lebenslauf
+(Idee -> Vorschlag -> Entscheidung -> Plan -> Umsetzung), das
+Querverweis-Vokabular und das Muster der generierten Uebersicht.
+
+Was uebernommen wurde und warum, dokumentiert
+entscheidungen/0001-synthese-zweier-quellen.md.

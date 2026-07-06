@@ -106,8 +106,12 @@ Regeln:
 1. Die Übersicht wird **komplett neu generiert** aus den Artefakt-Köpfen —
    nie von Hand geflickt. Quelle der Wahrheit sind allein die Artefakte
    (Zusage 2).
-2. Der Agent erneuert sie nach jeder Änderung an der Spur: Familien scannen,
-   drei Tabellen neu schreiben, Datum stempeln.
+2. Die Regeneration ist deterministische Fleißarbeit und gehört deshalb an
+   ein Skript, nicht an ein Sprachmodell (Zusage 7 gilt auch für Werkzeuge):
+   `skripte/uebersicht-generieren.ps1` bzw. `.sh`, im Starter enthalten.
+   Der Agent **führt das Skript aus** — nach jeder Änderung an der Spur —
+   statt die Tabellen selbst zu schreiben.
+   (Entschieden in [0004](../entscheidungen/0004-konsequenzen-erstes-review.md).)
 
 ## 3.5 Kontinuität: Logbuch und Zwischenstände
 
@@ -118,6 +122,10 @@ Regeln:
 - **`_zwischenstand/`** (optional): Arbeitsablage für Pläne — Daten, Befunde,
   Entwürfe — ohne die Quelle der Wahrheit zu berühren. Inhalt ist
   wegwerfbar; was Bestand haben soll, zieht in einen Arbeitsbereich um.
+  **Abnahme-Belege sind keine Zwischenstände:** Ein abgenommener
+  Design-Entwurf gehört versioniert nach `ergebnisse/abnahmen/`
+  (Kapitel 4.2) — sonst verlinkt der Plan auf eine Datei, die für Dritte
+  nicht existiert.
 
 ## 3.6 Änderungen an der Methode selbst
 
