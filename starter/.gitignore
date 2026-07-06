@@ -1,0 +1,14 @@
+# Secrets bleiben lokal (siehe denkspur, Kapitel 2.5)
+.env
+.env.local
+
+# Wegwerfbares Arbeitsmaterial
+_zwischenstand/
+
+# Maschinenspezifisches
+.claude/settings.local.json
+CLAUDE.local.md
+
+# Betriebssystem
+Thumbs.db
+.DS_Store

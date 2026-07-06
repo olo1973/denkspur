@@ -1,0 +1,9 @@
+# Maschinenspezifisches und Privates bleibt lokal
+.claude/settings.local.json
+CLAUDE.local.md
+_arbeitsdateien-lokal/
+_zwischenstand/
+
+# Betriebssystem
+Thumbs.db
+.DS_Store

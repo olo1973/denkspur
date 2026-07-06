@@ -1,0 +1,86 @@
+---
+titel: Zusammenarbeit - Mensch und Agent
+typ: referenz
+status: entwurf
+stand: 2026-07-06
+---
+
+# Kapitel 4 — Zusammenarbeit: Mensch und Agent
+
+> Die Spielregeln zwischen Mensch und KI-Agent — und zwischen Menschen, wenn
+> aus dem Solo-Projekt ein Team-Projekt wird. Die Schnittstelle ist das
+> Gespräch, nicht eine Kommandosyntax: Der Mensch beschreibt, der Agent
+> strukturiert und schreibt die Artefakte.
+
+## 4.1 Das Bestätigungs-Gate und die Reichweite eines „Ja"
+
+Der Agent darf jederzeit **vorschlagen** — Ideen formulieren, Vorschläge
+ausarbeiten, Konsequenzen durchdenken. **Gehandelt** (Artefakte angelegt,
+Status gekippt, Umsetzung begonnen) wird erst auf ausdrückliche Freigabe.
+
+Dabei gilt: Ein bloßes „ja", „ok" oder „mach weiter" trägt eine unvermeidbare
+**Mehrdeutigkeit der Reichweite**. Bezieht sich das Ja auf den einen
+Vorschlag oder auf das ganze Paket? Beide Seiten klären den Umfang, bevor
+gehandelt wird — der Agent benennt explizit, was er unter der Freigabe
+versteht („Ich lege dann Idee X an und befördere Y — beides?").
+
+Freigabefrei bleiben die billigen Kontinuitäts-Handgriffe: Logbuch-Einträge,
+Zwischenstände, das Regenerieren der Übersicht.
+
+## 4.2 Das Design-Gate: Oberflächen als Bild abnehmen
+
+Anwendung von Zusage 7 (Abnahme am günstigsten Medium) auf Vorhaben mit
+Benutzeroberfläche, beschlossen in
+[Entscheidung 0003](../entscheidungen/0003-design-gate-abnahme-am-guenstigsten-medium.md):
+
+- Der Plan eines UI-Vorhabens enthält vor den Umsetzungs-Aufgaben ein
+  explizites Gate: **„Design-Entwurf visuell abgenommen"**.
+- Der Entwurf entsteht im günstigsten tauglichen Medium — Figma, ein
+  Bild-Mockup, notfalls eine ASCII-Skizze — und wird im Plan **verlinkt** wie
+  jedes andere Artefakt (Figma-Link oder exportiertes Bild unter
+  `_zwischenstand/`).
+- Erst nach der visuellen Abnahme beginnt die Code-Umsetzung. Iteration am
+  Bild kostet Minuten; Iteration am Code kostet Stunden und hinterlässt
+  Altlasten.
+
+Das Gate ist kein Wasserfall: Kleine, risikolose UI-Änderungen (ein Button,
+ein Text) brauchen kein Figma. Das Gate greift, wo Layout, Fluss oder
+Erscheinungsbild neu entstehen — überall dort, wo ein „gefällt mir nicht"
+nach der Umsetzung teuer wäre.
+
+## 4.3 Solo vs. Team: gleiche Struktur, mehr Explizitheit
+
+Die Struktur bleibt identisch; was sich ändert, ist der Grad an
+Explizitheit, Eigentümerschaft und Formalisierung. Solo darf vieles im Kopf
+des einen Autors liegen; im Team muss es geschrieben stehen.
+
+| Aspekt | Solo | Team |
+|---|---|---|
+| Versionierung | Datei-Sync oder Git, direkte Commits | **Git** mit Branches + Pull-Request-Review |
+| Frontmatter `status` / `owner` | optional | **Pflicht** — sonst weiß niemand, worauf Verlass ist |
+| Entscheidungen | ADRs kurz und formlos | ADRs verbindlich, Änderung per Review |
+| Glossar `_meta/glossar.md` | selten nötig | gemeinsames Vokabular pflegen |
+| Agenten-Instruktionen | formlos gepflegt | versioniert, für alle gleich, Änderung per Review |
+| Posteingang `_eingang/` | locker | klare Regel: zeitnah leeren |
+| Datenklassen-Regel (2.5) | Selbstdisziplin | technisch absichern (Pre-Commit-Hook, Secret-Scanning) |
+| Onboarding | unnötig | Eingangsseite orientiert Neue in unter 5 Minuten |
+
+Faustregel: **Im Team ist alles eine Spur formaler** — genau die Felder, die
+solo Overhead wären, tragen dort die Zusammenarbeit.
+
+## 4.4 Adoption und Aktualisierung
+
+- **Einstieg:** den Inhalt von [`starter/`](../starter/) ins eigene Projekt
+  kopieren, Platzhalter füllen, erste Idee anlegen. Der Leitfaden führt durch
+  den ersten kompletten Durchlauf.
+- **Aktualisierung:** Eine neue denkspur-Version wird durch erneutes Kopieren
+  der Starter-Inhalte übernommen (Vorlagen, `AGENTS.md`-Kurzreferenz); die
+  eigenen Artefakte — Ideen, Entscheidungen, Pläne, Inhalte — bleiben
+  unberührt. Eigene Abweichungen von der Methode sind erlaubt und werden, der
+  Methode gemäß, als eigenes ADR festgehalten.
+
+## Verknüpfungen
+
+- [Kapitel 1 — Vertrag](01-vertrag.md)
+- [Kapitel 3 — Lebenslauf (die Zeit)](03-lebenslauf.md)
+- [Leitfaden (didaktischer Einstieg)](../leitfaden.md)
