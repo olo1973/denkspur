@@ -1,6 +1,7 @@
 ---
 typ: glossar
-stand: JJJJ-MM-TT
+status: entwurf
+datum: JJJJ-MM-TT
 ---
 
 # Glossar

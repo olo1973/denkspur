@@ -5,10 +5,12 @@ an. Für Agenten, die hier (oder in einem denkspur-Projekt) arbeiten, gilt:
 
 ## Harte Regeln
 
-1. **Bestätigungs-Gate:** Vorschlagen jederzeit; Artefakte anlegen, Status
-   kippen oder umsetzen nur nach ausdrücklicher Freigabe. Vor dem Handeln die
-   Reichweite der Freigabe benennen (ein bloßes „ja" ist mehrdeutig).
-   Freigabefrei: Logbuch-Einträge, `_zwischenstand/`, Übersicht regenerieren.
+1. **Freigabe-Modus dieses Repos: `gespraech`.** Vorschlagen jederzeit;
+   Artefakte anlegen, Status kippen oder umsetzen nur nach ausdrücklicher
+   Freigabe — vor dem Handeln die Reichweite benennen (ein bloßes „ja" ist
+   mehrdeutig). Alternativer Modus `pr-gate` (Freigabe = PR-Merge): siehe
+   `methode/04`, 4.1. Freigabefrei in beiden Modi: Logbuch-Einträge,
+   `_zwischenstand/`, Übersicht regenerieren.
 2. **Nie wegeditieren:** Committete Entscheidungen werden nicht verändert —
    neue ADRs mit `Ergänzt:` / `Ersetzt:` einhängen. Nur unveröffentlichte
    Vorschläge dürfen in place reifen.

@@ -1,8 +1,7 @@
 ---
-titel: Lebenslauf - die Zeit
 typ: referenz
 status: entwurf
-stand: 2026-07-06
+datum: 2026-07-06
 ---
 
 # Kapitel 3 — Lebenslauf: die Zeit
@@ -18,13 +17,13 @@ stand: 2026-07-06
 
 ```mermaid
 flowchart LR
-    I[Idee\nideen/] -->|befördert| V[Vorschlag\nentscheidungen/]
-    V -->|angenommen| E[Entscheidung\nentscheidungen/]
-    E -->|Setzt um:| P[Plan\nplaene/]
-    P --> U[Umsetzung\nplaene/]
-    I -.->|verworfen| X1(( ))
-    V -.->|abgelehnt| X2(( ))
-    P -.->|abgebrochen| X3(( ))
+    I["Idee<br/>ideen/"] -->|befördert| V["Vorschlag<br/>entscheidungen/"]
+    V -->|angenommen| E["Entscheidung<br/>entscheidungen/"]
+    E -->|Setzt um:| P["Plan<br/>plaene/"]
+    P --> U["Umsetzung<br/>plaene/"]
+    I -.->|verworfen| XI(("Ende"))
+    V -.->|abgelehnt| XV(("Ende"))
+    P -.->|abgebrochen| XP(("Ende"))
 ```
 
 | Station | Ort | Status-Werte |
@@ -74,7 +73,11 @@ Hervorgegangen aus: [Idee 0007](../ideen/0007-merkliste.md)
 **Nummerierung:** vierstellig, fortlaufend, je Familie unabhängig
 (`ideen/0007-…` und `entscheidungen/0009-…` haben nichts miteinander zu tun).
 Nummern drücken **nur Reihenfolge** aus, nie Beziehungen — Beziehungen drücken
-ausschließlich die Links aus.
+ausschließlich die Links aus. Vergeben daher zwei parallele Branches dieselbe
+Nummer, wird die Kollision **beim Merge aufgelöst**: Wer sie vorfindet, gibt
+dem eigenen Artefakt die nächste freie Nummer und passt dessen Links an —
+verlustfrei, weil die Nummer nichts als Reihenfolge trägt
+(entschieden in [0007](../entscheidungen/0007-praezisierungen-aus-dem-review.md)).
 
 ## 3.3 Das Querverweis-Vokabular
 

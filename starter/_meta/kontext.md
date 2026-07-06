@@ -1,6 +1,7 @@
 ---
 typ: kontext
-stand: JJJJ-MM-TT
+status: entwurf
+datum: JJJJ-MM-TT
 ---
 
 # Kontext

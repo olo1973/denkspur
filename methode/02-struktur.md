@@ -1,8 +1,7 @@
 ---
-titel: Struktur - der Raum
 typ: referenz
 status: entwurf
-stand: 2026-07-06
+datum: 2026-07-06
 ---
 
 # Kapitel 2 — Struktur: der Raum
@@ -52,9 +51,12 @@ Pflichtprogramm — aber die **Bedeutung** der Ordner bleibt überall gleich.
 
 Bei Code-Projekten gibt das jeweilige Framework das Innenleben vor (`src/`,
 `public/`, …) und wird hier bewusst **nicht** geregelt: **Das Framework
-bestimmt das Innenleben, die Methode bestimmt die Ränder.** Die
-denkspur-Ordner treten neben die Framework-Struktur (üblich: unter `docs/`
-oder im Repo-Root).
+bestimmt das Innenleben, die Methode bestimmt die Ränder.** Verbindliche
+Andockung: Alle denkspur-Ordner und -Dateien liegen gebündelt unter
+`docs/` (`docs/ideen/`, `docs/entscheidungen/`, `docs/plaene/`,
+`docs/uebersicht.md`, …); im Repo-Root bleiben nur `README.md`, `AGENTS.md`
+und die Werkzeug-Zeiger. Die Übersicht-Skripte nehmen dafür den Pfad als
+Parameter (`./skripte/uebersicht-generieren.ps1 -Pfad docs`).
 
 ## 2.2 Namens- und Ablagekonventionen
 
@@ -77,18 +79,23 @@ Diese Regeln sind langweilig und genau deshalb wertvoll:
 
 Drei Dinge machen eine Datei für Mensch und Agent gut nutzbar:
 
-**1. Frontmatter (YAML-Kopf)** — Metadaten für die Maschine:
+**1. Frontmatter (YAML-Kopf)** — Metadaten für die Maschine. Es gilt **ein
+Feldsatz für alle Dokumente** (entschieden in
+[0005](../entscheidungen/0005-einheitliches-frontmatter.md)):
 
 ```yaml
 ---
-titel: Analyse Thema X
-typ: analyse            # analyse | quelle | protokoll | notiz | uebersicht | …
-status: entwurf         # entwurf | in-pruefung | final   (im Team Pflicht)
-owner: <kuerzel>        # wer pflegt das (im Team Pflicht)
-stand: 2026-07-06
-tags: [analyse]
+typ: analyse            # idee | entscheidung | plan | notiz | analyse | uebersicht | …
+status: entwurf         # Spur: Lebenslauf-Status; Inhalte: entwurf | in-pruefung | final
+owner: <kuerzel>        # wer pflegt das (im Team Pflicht, solo optional)
+datum: 2026-07-06       # maßgebliches Datum: Entstehung (Spur) bzw. letzter Stand
+tags: [analyse]         # optional
 ---
 ```
+
+Der Titel steht **nicht** im Frontmatter — er wohnt allein in der
+H1-Überschrift (eine Wahrheit, ein Ort; dort lesen ihn Mensch, GitHub und
+die Übersicht-Skripte).
 
 **2. Verlinkung** — Querverweise als **echte Links**, nicht als toter
 Dateiname-Text: relative Markdown-Links (`[Text](../pfad/datei.md)`) in
@@ -114,9 +121,12 @@ derselbe Gedanke; nur der Andockpunkt unterscheidet sich:
 | Cursor | `.cursor/rules/…` |
 
 **Regel:** Die eigentlichen Instruktionen stehen in **`AGENTS.md`**; die
-werkzeugspezifischen Dateien enthalten nur einen Import-Zeiger (Claude Code:
-eine Zeile `@AGENTS.md`). So gibt es eine Wahrheit (Zusage 2), egal welches
-Werkzeug morgen im Einsatz ist.
+werkzeugspezifischen Dateien enthalten nur einen Zeiger. So gibt es eine
+Wahrheit (Zusage 2), egal welches Werkzeug morgen im Einsatz ist. Dabei ist
+`@AGENTS.md` **Claude-Code-Import-Syntax**; Copilot und Cursor können nicht
+importieren — dort ist der Zeiger ein Prosa-Verweis („Lies und befolge
+`AGENTS.md` im Projekt-Root"). Der Starter liefert alle drei Zeiger-Dateien
+mit; nicht benötigte werden gelöscht.
 
 Bewährter Inhalt, in dieser Reihenfolge:
 

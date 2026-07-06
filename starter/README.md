@@ -1,9 +1,8 @@
 ---
-titel: <Projektname>
 typ: uebersicht
 status: entwurf
 owner: <kuerzel>
-stand: JJJJ-MM-TT
+datum: JJJJ-MM-TT
 ---
 
 <!-- Vorlage: Diese Datei wird die Eingangsseite DEINES Projekts.

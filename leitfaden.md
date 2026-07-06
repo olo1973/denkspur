@@ -1,8 +1,7 @@
 ---
-titel: Leitfaden - denkspur lernen
 typ: leitfaden
 status: entwurf
-stand: 2026-07-06
+datum: 2026-07-06
 ---
 
 # Leitfaden: denkspur lernen
@@ -210,18 +209,39 @@ Zwei Hilfsdateien halten das Ganze übersichtlich, beide billig:
 
 In der Praxis schreibt die Artefakte meist ein KI-Agent: Man beschreibt im
 Gespräch, der Agent strukturiert, legt Dateien an, pflegt Links und
-Übersicht. Zwei Regeln halten das sicher:
+Übersicht. Jedes Projekt deklariert in seiner `AGENTS.md` einen von zwei
+**Freigabe-Modi**:
 
-1. **Bestätigungs-Gate:** Der Agent schlägt frei vor, handelt aber erst auf
-   ausdrückliche Freigabe.
-2. **Reichweite klären:** Ein bloßes „ja" ist mehrdeutig — gilt es dem einen
-   Artefakt oder dem ganzen Paket? Der Agent benennt vor dem Handeln, was er
-   unter der Freigabe versteht.
+1. **Gespräch** (Default): Der Agent schlägt frei vor, handelt aber erst auf
+   ausdrückliche Freigabe — und weil ein bloßes „ja" mehrdeutig ist (gilt es
+   dem einen Artefakt oder dem ganzen Paket?), benennt er vor dem Handeln,
+   was er unter der Freigabe versteht.
+2. **PR-Gate** (für autonome Workflows): Der Agent arbeitet frei auf einem
+   Feature-Branch; die Freigabe ist der Merge des Pull Requests — die
+   Reichweite des „Ja" ist der sichtbare Diff.
 
 Die Regeln für Agenten stehen maschinenlesbar in [`AGENTS.md`](AGENTS.md) —
 in jedem denkspur-Projekt, auch in diesem.
 
-## 7. Selbst anfangen
+## 7. Wann denkspur nicht lohnt
+
+Eine Methode, die ihre Grenzen nicht benennt, ist ein Prospekt. denkspur
+kostet Disziplin und ein paar Minuten je Artefakt — das lohnt nicht immer:
+
+- **Wegwerf-Arbeit:** Spikes, Experimente, Einmal-Skripte. Wo es keinen
+  Wiedereinstieg gibt, braucht es keine Spur.
+- **Ein-Tages-Aufgaben** mit einer beteiligten Person und ohne
+  Folgeentscheidungen — der Chat-Verlauf stirbt hier zu Recht.
+- **Reine Konsum-Ablagen** (Downloads, Archive), die niemand fortschreibt.
+- **Triviale, jederzeit umkehrbare Alltagsentscheidungen** — ein ADR für
+  jede Button-Farbe wäre Zeremonie, nicht Methode.
+
+Faustregel: Die Spur lohnt ab dem Moment, in dem eine zweite Person, eine
+zweite Session oder ein zweiter Monat ins Spiel kommt. Und die Methode
+skaliert nach unten: Wer nur `entscheidungen/` übernimmt, hat schon den
+größten Hebel gegen das teuerste Vergessen.
+
+## 8. Selbst anfangen
 
 1. Inhalt von [`starter/`](starter/) ins eigene Projekt kopieren.
 2. `README.md` (die Tür) und `AGENTS.md` (die Regeln) füllen — die

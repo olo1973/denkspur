@@ -1,8 +1,7 @@
 ---
-titel: denkspur
 typ: uebersicht
 status: entwurf
-stand: 2026-07-06
+datum: 2026-07-06
 ---
 
 # denkspur

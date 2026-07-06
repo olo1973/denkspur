@@ -1,8 +1,7 @@
 ---
-titel: Der Vertrag - neun Zusagen
 typ: referenz
 status: entwurf
-stand: 2026-07-06
+datum: 2026-07-06
 ---
 
 # Kapitel 1 — Der Vertrag: neun Zusagen

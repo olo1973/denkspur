@@ -3,6 +3,17 @@
 > Formloses Arbeitstagebuch, neueste Einträge zuerst. Kein Ersatz für die
 > Spur — nur der billigste Wiedereinstieg nach einer Pause.
 
+## 2026-07-06 — Review abgeschlossen (v1.2)
+
+Die restlichen Review-Befunde 7–13 umgesetzt: einheitliches Frontmatter
+([0005](entscheidungen/0005-einheitliches-frontmatter.md)), zwei
+Freigabe-Modi Gespräch/PR-Gate
+([0006](entscheidungen/0006-freigabe-modi.md)), Präzisierungen
+(Nummern-Merge-Regel, `docs/`-Andockung, Copilot-/Cursor-Zeiger,
+Grenzen-Sektion; [0007](entscheidungen/0007-praezisierungen-aus-dem-review.md))
+sowie der Mermaid-Bugfix. Damit sind alle 13 Befunde des ersten Reviews
+abgearbeitet. Nächster Schritt: Veröffentlichung auf GitHub nach Abnahme.
+
 ## 2026-07-06 — nach dem ersten Review
 
 Externes kritisches Review mit 13 Befunden. Befunde 1–6 umgesetzt

@@ -17,9 +17,12 @@
 
 Dieses Projekt folgt [denkspur](https://github.com/<owner>/denkspur).
 
-1. **Bestätigungs-Gate:** Vorschlagen jederzeit; Artefakte anlegen, Status
+1. **Freigabe-Modus dieses Projekts: `gespraech`.**
+   <!-- Alternativ: `pr-gate` — Agent arbeitet frei auf Feature-Branches,
+        die Freigabe ist der PR-Merge. Nie direkt auf dem Hauptzweig. -->
+   Im Modus `gespraech`: Vorschlagen jederzeit; Artefakte anlegen, Status
    kippen oder umsetzen nur nach ausdrücklicher Freigabe — vorher die
-   Reichweite der Freigabe benennen. Freigabefrei: Logbuch,
+   Reichweite der Freigabe benennen. Freigabefrei in beiden Modi: Logbuch,
    `_zwischenstand/`, Übersicht regenerieren.
 2. **Lebenslauf:** Idee (`ideen/NNNN-*.md`: keim → befördert/verworfen) →
    Entscheidung als ADR (`entscheidungen/NNNN-*.md`: vorgeschlagen →
@@ -55,4 +58,4 @@ Dieses Projekt folgt [denkspur](https://github.com/<owner>/denkspur).
 
 Methoden-Block oben: abgeleitete Kurzfassung; maßgeblich ist `methode/` im
 denkspur-Repo. Vor einem Update dessen CHANGELOG lesen („Adopter-Migration").
-denkspur-Stand: **v1.1**
+denkspur-Stand: **v1.2**

@@ -1,9 +1,8 @@
 ---
-titel: <Titel>
 typ: notiz
 status: entwurf
 owner: <kuerzel>
-stand: JJJJ-MM-TT
+datum: JJJJ-MM-TT
 tags: []
 ---
 

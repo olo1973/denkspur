@@ -1,8 +1,7 @@
 ---
-titel: Zusammenarbeit - Mensch und Agent
 typ: referenz
 status: entwurf
-stand: 2026-07-06
+datum: 2026-07-06
 ---
 
 # Kapitel 4 — Zusammenarbeit: Mensch und Agent
@@ -12,20 +11,31 @@ stand: 2026-07-06
 > Gespräch, nicht eine Kommandosyntax: Der Mensch beschreibt, der Agent
 > strukturiert und schreibt die Artefakte.
 
-## 4.1 Das Bestätigungs-Gate und die Reichweite eines „Ja"
+## 4.1 Das Bestätigungs-Gate: zwei Freigabe-Modi
 
 Der Agent darf jederzeit **vorschlagen** — Ideen formulieren, Vorschläge
-ausarbeiten, Konsequenzen durchdenken. **Gehandelt** (Artefakte angelegt,
-Status gekippt, Umsetzung begonnen) wird erst auf ausdrückliche Freigabe.
+ausarbeiten, Konsequenzen durchdenken. Wann er **handeln** darf (Artefakte
+anlegen, Status kippen, umsetzen), bestimmt der Freigabe-Modus, den jedes
+Projekt in seiner `AGENTS.md` deklariert (entschieden in
+[0006](../entscheidungen/0006-freigabe-modi.md)):
 
-Dabei gilt: Ein bloßes „ja", „ok" oder „mach weiter" trägt eine unvermeidbare
-**Mehrdeutigkeit der Reichweite**. Bezieht sich das Ja auf den einen
-Vorschlag oder auf das ganze Paket? Beide Seiten klären den Umfang, bevor
-gehandelt wird — der Agent benennt explizit, was er unter der Freigabe
-versteht („Ich lege dann Idee X an und befördere Y — beides?").
+- **`gespraech`** (Default, gilt ohne Deklaration): Gehandelt wird erst auf
+  ausdrückliche Freigabe im Dialog. Dabei gilt: Ein bloßes „ja", „ok" oder
+  „mach weiter" trägt eine unvermeidbare **Mehrdeutigkeit der Reichweite** —
+  bezieht sich das Ja auf den einen Vorschlag oder das ganze Paket? Der
+  Agent benennt vor dem Handeln explizit, was er unter der Freigabe versteht
+  („Ich lege dann Idee X an und befördere Y — beides?").
+- **`pr-gate`** (für autonome, Git-basierte Workflows): Der Agent arbeitet
+  frei auf einem Feature-Branch — legt Artefakte an, kippt Status, setzt
+  um. **Die Freigabe ist der Merge des Pull Requests durch den Menschen**;
+  die Reichweite des „Ja" ist der sichtbare Diff. Direkt auf dem Hauptzweig
+  handelt der Agent auch in diesem Modus nicht.
 
-Freigabefrei bleiben die billigen Kontinuitäts-Handgriffe: Logbuch-Einträge,
-Zwischenstände, das Regenerieren der Übersicht.
+In beiden Modi freigabefrei bleiben die billigen Kontinuitäts-Handgriffe:
+Logbuch-Einträge, Zwischenstände, das Regenerieren der Übersicht. Und die
+eiserne Regel aus 3.3 gilt modusunabhängig: Auch auf einem Branch werden
+gemergte Entscheidungen nur per `Ergänzt:`/`Ersetzt:` fortgeschrieben, nie
+umgeschrieben.
 
 ## 4.2 Das Design-Gate: Oberflächen als Bild abnehmen
 
