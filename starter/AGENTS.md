@@ -15,7 +15,7 @@
 
 ## Methode: denkspur (Kurzreferenz)
 
-Dieses Projekt folgt [denkspur](https://github.com/<owner>/denkspur).
+Dieses Projekt folgt [denkspur](https://github.com/olo1973/denkspur).
 
 1. **Freigabe-Modus dieses Projekts: `gespraech`.**
    <!-- Alternativ: `pr-gate` — Agent arbeitet frei auf Feature-Branches,

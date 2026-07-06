@@ -28,5 +28,5 @@ aktuellen Stand.
 ## Konventionen
 
 Dieses Projekt folgt der Methode
-[denkspur](https://github.com/<owner>/denkspur) — Kurzreferenz für Agenten in
+[denkspur](https://github.com/olo1973/denkspur) — Kurzreferenz für Agenten in
 `AGENTS.md`.
