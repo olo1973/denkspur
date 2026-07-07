@@ -3,6 +3,16 @@
 > Formloses Arbeitstagebuch, neueste Einträge zuerst. Kein Ersatz für die
 > Spur — nur der billigste Wiedereinstieg nach einer Pause.
 
+## 2026-07-07 — Stil-Lektorat
+
+Die Methodentexte (README, Leitfaden, `methode/01`–`04`) trugen erkennbar
+KI-typische Rhetorik in hoher Dichte. Nach
+[Entscheidung 0008](entscheidungen/0008-stil-lektorat.md) ein rein
+stilistischer Lektor-Durchgang mit fester Rubrik: Aussagen, Links und
+Terminologie unverändert, Pointen-Dichte, Gedankenstriche und Dreierreihen
+reduziert. Entscheidungen 0001–0007 blieben unangetastet. Abnahme per
+PR-Merge.
+
 ## 2026-07-07 — Veröffentlicht
 
 Nach Abnahme durch den Autor als öffentliches Repo auf GitHub gestellt

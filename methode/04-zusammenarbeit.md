@@ -8,8 +8,8 @@ datum: 2026-07-06
 
 > Die Spielregeln zwischen Mensch und KI-Agent — und zwischen Menschen, wenn
 > aus dem Solo-Projekt ein Team-Projekt wird. Die Schnittstelle ist das
-> Gespräch, nicht eine Kommandosyntax: Der Mensch beschreibt, der Agent
-> strukturiert und schreibt die Artefakte.
+> Gespräch: Der Mensch beschreibt, der Agent strukturiert und schreibt die
+> Artefakte.
 
 ## 4.1 Das Bestätigungs-Gate: zwei Freigabe-Modi
 
@@ -21,7 +21,7 @@ Projekt in seiner `AGENTS.md` deklariert (entschieden in
 
 - **`gespraech`** (Default, gilt ohne Deklaration): Gehandelt wird erst auf
   ausdrückliche Freigabe im Dialog. Dabei gilt: Ein bloßes „ja", „ok" oder
-  „mach weiter" trägt eine unvermeidbare **Mehrdeutigkeit der Reichweite** —
+  „mach weiter" trägt eine unvermeidbare Mehrdeutigkeit der Reichweite —
   bezieht sich das Ja auf den einen Vorschlag oder das ganze Paket? Der
   Agent benennt vor dem Handeln explizit, was er unter der Freigabe versteht
   („Ich lege dann Idee X an und befördere Y — beides?").
@@ -59,8 +59,8 @@ Benutzeroberfläche, beschlossen in
 
 Das Gate ist kein Wasserfall: Kleine, risikolose UI-Änderungen (ein Button,
 ein Text) brauchen kein Figma. Das Gate greift, wo Layout, Fluss oder
-Erscheinungsbild neu entstehen — überall dort, wo ein „gefällt mir nicht"
-nach der Umsetzung teuer wäre.
+Erscheinungsbild neu entstehen, also überall dort, wo ein „gefällt mir
+nicht" nach der Umsetzung teuer wäre.
 
 ## 4.3 Solo vs. Team: gleiche Struktur, mehr Explizitheit
 
@@ -79,7 +79,7 @@ des einen Autors liegen; im Team muss es geschrieben stehen.
 | Datenklassen-Regel (2.5) | Selbstdisziplin | technisch absichern (Pre-Commit-Hook, Secret-Scanning) |
 | Onboarding | unnötig | Eingangsseite orientiert Neue in unter 5 Minuten |
 
-Faustregel: **Im Team ist alles eine Spur formaler** — genau die Felder, die
+Faustregel: Im Team ist alles eine Spur formaler. Genau die Felder, die
 solo Overhead wären, tragen dort die Zusammenarbeit.
 
 ## 4.4 Adoption und Aktualisierung
@@ -91,7 +91,7 @@ solo Overhead wären, tragen dort die Zusammenarbeit.
   [`CHANGELOG.md`](../CHANGELOG.md) lesen — jede Version nennt in der Zeile
   „Adopter-Migration" die betroffenen Starter-Dateien. Nur diese werden
   übernommen (typisch: `_templates/`, `skripte/`). **Projektspezifisch
-  angepasste Dateien — insbesondere `AGENTS.md` und `README.md` — nie blind
+  angepasste Dateien (insbesondere `AGENTS.md` und `README.md`) nie blind
   überschreiben**; dort wird nur der Methoden-Block angeglichen, die harten
   Projektregeln bleiben unangetastet. Der Versionsmarker am Ende der
   Starter-`AGENTS.md` zeigt, auf welchem Stand ein Projekt ist. Eigene

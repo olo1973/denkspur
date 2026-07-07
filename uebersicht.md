@@ -1,7 +1,7 @@
 # Übersicht
 
 > Generierter Statusindex — wird komplett aus den Artefakt-Köpfen neu
-> erzeugt, nie von Hand gepflegt. **Stand: 2026-07-06**
+> erzeugt, nie von Hand gepflegt. **Stand: 2026-07-07**
 
 ## Ideen
 
@@ -20,6 +20,7 @@
 | [0005](entscheidungen/0005-einheitliches-frontmatter.md) | Einheitliches Frontmatter für alle Dokumente | angenommen | 2026-07-06 | format, review |
 | [0006](entscheidungen/0006-freigabe-modi.md) | Zwei Freigabe-Modi — Gespräch und PR-Gate | angenommen | 2026-07-06 | zusammenarbeit, autonomie, review |
 | [0007](entscheidungen/0007-praezisierungen-aus-dem-review.md) | Präzisierungen aus dem Review (Befunde 8, 10, 11, 13) | angenommen | 2026-07-06 | methode, review |
+| [0008](entscheidungen/0008-stil-lektorat.md) | Stil-Lektorat — KI-Klang aus den Methodentexten nehmen | angenommen | 2026-07-07 | sprache, stil |
 
 ## Pläne
 
