@@ -7,15 +7,15 @@ datum: 2026-07-06
 # denkspur
 
 > Eine Methode, Projekte so zu führen, dass Mensch und KI-Agent sie jederzeit
-> **finden, verstehen und fortschreiben** können. Struktur für den Raum
-> (wo liegt was), Spur für die Zeit (warum ist es so).
+> wieder aufnehmen und fortschreiben können: Struktur für den Raum (wo liegt
+> was), Spur für die Zeit (warum ist es so).
 
-Projekte scheitern selten an fehlender Arbeit, sondern an verlorenem Kontext:
-Entscheidungen sterben im Chat-Verlauf, Ablagen wachsen wild, und jede neue
-Session — ob mit einem Kollegen oder einem KI-Agenten — beginnt mit demselben
-teuren Wieder-Erklären. denkspur hält dagegen: **Kontext gehört in die Ablage,
-nicht in den Chat.** Jeder Gedanke bekommt einen vorhersehbaren Ort und einen
-nachvollziehbaren Lebenslauf.
+Der übliche Verlust in Projekten ist Kontext. Entscheidungen stehen nur im
+Chat-Verlauf, Ablagen wachsen ungeplant, und jede neue Session mit einem
+Kollegen oder einem KI-Agenten beginnt mit demselben teuren Wieder-Erklären.
+denkspur setzt dagegen eine einfache Grundregel: **Kontext gehört in die
+Ablage, nicht in den Chat.** Jeder Gedanke bekommt dort einen vorhersehbaren
+Ort und einen nachvollziehbaren Lebenslauf.
 
 ## Aufbau dieses Repos
 
@@ -32,12 +32,12 @@ nachvollziehbaren Lebenslauf.
 
 ## Schnellstart
 
-1. [`leitfaden.md`](leitfaden.md) lesen — motiviert das Problem, baut die Methode
-   Schritt für Schritt auf und führt ein Beispiel von der ersten Idee bis zur
-   fertigen Umsetzung durch.
+1. [`leitfaden.md`](leitfaden.md) lesen. Er motiviert das Problem, baut die
+   Methode Schritt für Schritt auf und führt ein Beispiel von der ersten Idee
+   bis zur fertigen Umsetzung durch.
 2. Den Inhalt von [`starter/`](starter/) in das eigene Projekt kopieren.
 3. Platzhalter in `README.md` und `AGENTS.md` füllen, erste Idee unter `ideen/`
-   festhalten — der Rest ergibt sich aus der Arbeit.
+   festhalten. Der Rest ergibt sich aus der Arbeit.
 
 ## Herkunft
 
@@ -46,18 +46,18 @@ denkspur ist eine Synthese aus zwei Quellen:
 - **[decision-trail](https://github.com/ckluth/decision-trail)** (ckluth,
   MIT-Lizenz) — der Lebenslauf für Gedanken: Idee → Vorschlag → Entscheidung →
   Plan → Umsetzung, das Querverweis-Vokabular und die generierte Übersicht.
-- **Private Struktur-Standards des Autors** für KI-konsumierbare Ablagen —
+- **Private Struktur-Standards des Autors** für KI-konsumierbare Ablagen:
   das Projekt-Skelett, die Namenskonventionen, das Frontmatter-Modell, die
   Datenklassen-Regeln und die Solo/Team-Skalierung.
 
-Warum und wie beides zusammengeführt wurde, dokumentiert — methodengerecht —
-[Entscheidung 0001](entscheidungen/0001-synthese-zweier-quellen.md); die
-formale Attribution steht in [`NOTICE`](NOTICE).
+Warum und wie beides zusammengeführt wurde, dokumentiert (der Methode
+entsprechend) [Entscheidung 0001](entscheidungen/0001-synthese-zweier-quellen.md);
+die formale Attribution steht in [`NOTICE`](NOTICE).
 
 **Ehrlichkeitshinweis zur eigenen Spur:** Die Entscheidungen 0001–0003
-entstanden gebündelt in der Gründungssitzung am 2026-07-06 — sie
-dokumentieren echte Abwägungen, aber keine über Zeit gereiften Fäden. Die
-Spur unter Realbedingungen beginnt mit
+entstanden gebündelt in der Gründungssitzung am 2026-07-06. Sie dokumentieren
+echte Abwägungen, aber keine über Zeit gereiften Fäden. Die Spur unter
+Realbedingungen beginnt mit
 [Entscheidung 0004](entscheidungen/0004-konsequenzen-erstes-review.md), den
 Konsequenzen aus dem ersten kritischen Review. Zustände wie `verworfen` und
 `abgelehnt` werden hier erst vorkommen, wenn sie wirklich eintreten — eine

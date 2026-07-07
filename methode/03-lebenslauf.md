@@ -6,7 +6,7 @@ datum: 2026-07-06
 
 # Kapitel 3 — Lebenslauf: die Zeit
 
-> Wie ein Gedanke durch das Projekt reist — von der ersten Notiz bis zur
+> Wie ein Gedanke durch das Projekt reist, von der ersten Notiz bis zur
 > abgehakten Umsetzung — und warum in sechs Monaten noch nachvollziehbar ist,
 > *warum* etwas so ist und was verworfen wurde. Dieses Kapitel übernimmt den
 > Kern von [decision-trail](https://github.com/ckluth/decision-trail)
@@ -34,7 +34,7 @@ flowchart LR
 | **Plan** | `plaene/NNNN-*.md` | `entwurf` → `aktiv` |
 | **Umsetzung** | dieselbe Datei | → `fertig` / `abgebrochen` |
 
-- **Idee**: hält einen Gedanken zum minimalen Preis fest — drei Zeilen
+- **Idee**: hält einen Gedanken zum minimalen Preis fest; drei Zeilen
   reichen. Ideen dürfen Kinder bekommen (`Eltern-Idee:`), die Verwandtschaft
   bleibt verlinkt (Zusage 6).
 - **Vorschlag**: eine gereifte Idee wird zum ADR (Architecture Decision
@@ -75,8 +75,8 @@ Hervorgegangen aus: [Idee 0007](../ideen/0007-merkliste.md)
 Nummern drücken **nur Reihenfolge** aus, nie Beziehungen — Beziehungen drücken
 ausschließlich die Links aus. Vergeben daher zwei parallele Branches dieselbe
 Nummer, wird die Kollision **beim Merge aufgelöst**: Wer sie vorfindet, gibt
-dem eigenen Artefakt die nächste freie Nummer und passt dessen Links an —
-verlustfrei, weil die Nummer nichts als Reihenfolge trägt
+dem eigenen Artefakt die nächste freie Nummer und passt dessen Links an;
+das ist verlustfrei, weil die Nummer nichts als Reihenfolge trägt
 (entschieden in [0007](../entscheidungen/0007-praezisierungen-aus-dem-review.md)).
 
 ## 3.3 Das Querverweis-Vokabular
@@ -95,7 +95,7 @@ verschonen ältere Artefakte vor wachsenden Rückverweis-Listen.
 
 **Die eiserne Regel:** Eine Entscheidung wird **nie wegeditiert** (Zusage 8).
 Ändert sich die Lage, entsteht ein neues ADR, das das alte `Ergänzt:` oder
-`Ersetzt:` — die Begründungsspur bleibt lückenlos lesbar. Nur ein noch nicht
+`Ersetzt:`; die Begründungsspur bleibt lückenlos lesbar. Nur ein noch nicht
 committeter Vorschlag darf in place überarbeitet werden.
 
 ## 3.4 Die Übersicht: generiert, nie handgepflegt
@@ -119,11 +119,11 @@ Regeln:
 ## 3.5 Kontinuität: Logbuch und Zwischenstände
 
 - **`logbuch.md`** (optional, empfohlen): formloses Arbeitstagebuch, neueste
-  Einträge zuerst — wo steht die Arbeit, was hat sich verschoben, was ist
+  Einträge zuerst: wo steht die Arbeit, was hat sich verschoben, was ist
   offen. Der billigste Wiedereinstieg nach einer Pause; wird nach Konvention
-  am Session-Ende ergänzt, ohne Pflicht und ohne Freigabe-Zeremonie.
-- **`_zwischenstand/`** (optional): Arbeitsablage für Pläne — Daten, Befunde,
-  Entwürfe — ohne die Quelle der Wahrheit zu berühren. Inhalt ist
+  am Session-Ende ergänzt, ohne Pflicht und ohne Freigabe.
+- **`_zwischenstand/`** (optional): Arbeitsablage für Pläne (Daten, Befunde,
+  Entwürfe), ohne die Quelle der Wahrheit zu berühren. Inhalt ist
   wegwerfbar; was Bestand haben soll, zieht in einen Arbeitsbereich um.
   **Abnahme-Belege sind keine Zwischenstände:** Ein abgenommener
   Design-Entwurf gehört versioniert nach `ergebnisse/abnahmen/`

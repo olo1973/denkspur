@@ -6,11 +6,10 @@ datum: 2026-07-06
 
 # Kapitel 1 — Der Vertrag: neun Zusagen
 
-> Was ein Projekt, das denkspur anwendet, seinen Bearbeitern verspricht — dem
-> Menschen von heute, dem Menschen in sechs Monaten und jedem KI-Agenten
-> dazwischen. Alles Weitere in dieser Methode folgt aus diesen neun Zusagen;
-> wenn eine Regel im Einzelfall unklar ist, entscheidet der Rückgriff auf den
-> Vertrag.
+> Was ein Projekt, das denkspur anwendet, seinen Bearbeitern verspricht, ob
+> Mensch oder KI-Agent, heute oder in sechs Monaten. Alles Weitere in dieser
+> Methode folgt aus diesen neun Zusagen; wenn eine Regel im Einzelfall unklar
+> ist, entscheidet der Rückgriff auf den Vertrag.
 
 Die Zusagen vereinen zwei Quellen: die acht Promises von
 [decision-trail](https://github.com/ckluth/decision-trail) (Zeitachse) und die
@@ -26,19 +25,19 @@ fünf Grundprinzipien eines Struktur-Standards für KI-konsumierbare Ablagen
 
 2. **Eine Wahrheit, ein Ort — der Rest verlinkt.**
    Jeder Fakt und jede Entscheidung steht an genau einer Stelle. Wird sie
-   anderswo gebraucht, wird verlinkt, nicht kopiert. Duplikate driften
-   auseinander; im Team ist das fatal, solo lästig.
+   anderswo gebraucht, wird verlinkt, nicht kopiert. Duplikate driften mit
+   der Zeit auseinander; im Team richtet das mehr Schaden an als solo.
 
 3. **Eine Tür je Projekt.**
-   Jedes Projekt hat eine Eingangsseite (`README.md`), die in unter fünf
-   Minuten orientiert — den Menschen wie den Agenten. Wer die Tür gelesen hat,
-   weiß, wo alles Weitere wohnt.
+   Jedes Projekt hat eine Eingangsseite (`README.md`), die Menschen wie
+   Agenten in unter fünf Minuten orientiert. Wer sie gelesen hat, weiß, wo
+   alles Weitere liegt.
 
 4. **Klartext für Mensch und Maschine.**
    Markdown als Standardformat, Metadaten im Frontmatter, sprechende Namen,
-   Diagramme als Text (Mermaid). Nichts versteckt sich in einem Werkzeug,
-   einem Binärformat oder einer Folie. Was die Maschine parsen kann, kann der
-   Mensch lesen — und umgekehrt.
+   Diagramme als Text (Mermaid). Inhalte verstecken sich nicht in einem
+   Werkzeug, einem Binärformat oder einer Folie; Mensch und Maschine lesen
+   dieselben Dateien.
 
 5. **Getrennte Lebensbereiche: Eingang → Wissen → Ergebnis.**
    Rohmaterial (unverändert), aufbereitetes Wissen (strukturiert) und erzeugte
@@ -48,8 +47,8 @@ fünf Grundprinzipien eines Struktur-Standards für KI-konsumierbare Ablagen
 6. **Ein Lebenslauf für Gedanken.**
    Jeder tragende Gedanke durchläuft nachvollziehbare Stationen:
    Idee → Vorschlag → Entscheidung → Plan → Umsetzung. Ideen dürfen Kinder
-   bekommen (die Verwandtschaft bleibt verlinkt), und nichts Wertvolles stirbt
-   im Chat-Verlauf.
+   bekommen (die Verwandtschaft bleibt verlinkt), und nichts Wertvolles geht
+   im Chat-Verlauf verloren.
 
 7. **Abnahme am günstigsten Medium.**
    Jede Station erzeugt das billigste Artefakt, das eine Entscheidung erlaubt:

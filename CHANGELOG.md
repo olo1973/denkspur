@@ -3,6 +3,16 @@
 Jede Version nennt in der Zeile **Adopter-Migration**, was ein bestehendes
 denkspur-Projekt beim Update übernehmen muss (siehe `methode/04`, 4.4).
 
+## v1.2.1 — 2026-07-07
+
+Stil-Lektorat der Methodentexte
+([Entscheidung 0008](entscheidungen/0008-stil-lektorat.md)): KI-typische
+Rhetorik-Dichte in README, Leitfaden und `methode/01`–`04` reduziert; alle
+Aussagen, Regeln und Links unverändert. Entscheidungen 0001–0007
+unangetastet.
+
+**Adopter-Migration:** keine (nur Textoberfläche dieses Repos).
+
 ## v1.2 — 2026-07-06
 
 Restliche Review-Befunde umgesetzt (Entscheidungen

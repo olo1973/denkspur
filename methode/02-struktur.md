@@ -47,11 +47,11 @@ projektname/
 Nicht jedes Projekt braucht alle Ordner. Ein kleines Solo-Projekt kommt mit
 `README.md`, `AGENTS.md`, den drei Lebenslauf-Ordnern und ein, zwei
 nummerierten Bereichen aus. Die Struktur ist ein Baukasten, kein
-Pflichtprogramm — aber die **Bedeutung** der Ordner bleibt überall gleich.
+Pflichtprogramm; die **Bedeutung** der Ordner bleibt überall gleich.
 
 Bei Code-Projekten gibt das jeweilige Framework das Innenleben vor (`src/`,
-`public/`, …) und wird hier bewusst **nicht** geregelt: **Das Framework
-bestimmt das Innenleben, die Methode bestimmt die Ränder.** Verbindliche
+`public/`, …) und wird hier bewusst **nicht** geregelt: Das Framework
+bestimmt das Innenleben, die Methode die Ränder. Verbindliche
 Andockung: Alle denkspur-Ordner und -Dateien liegen gebündelt unter
 `docs/` (`docs/ideen/`, `docs/entscheidungen/`, `docs/plaene/`,
 `docs/uebersicht.md`, …); im Repo-Root bleiben nur `README.md`, `AGENTS.md`
@@ -105,8 +105,8 @@ Beziehungs-Links der Lebenslauf-Artefakte folgen dem festen Vokabular aus
 Kapitel 3.
 
 **3. Eine Eingangs-Zusammenfassung** — die ersten Zeilen sagen in Klartext,
-wozu die Datei dient. Das ist der Kontext, den ein Agent zuerst liest — und
-der Mensch, der in sechs Monaten zurückkommt.
+wozu die Datei dient. Das ist der Kontext, den ein Agent zuerst liest,
+ebenso der Mensch, der in sechs Monaten zurückkommt.
 
 ## 2.4 Agenten-Instruktionen: eine Wahrheit, viele Andockpunkte
 
@@ -137,8 +137,8 @@ Bewährter Inhalt, in dieser Reihenfolge:
 5. **Verweistabelle auf externe Quellen** (2.5).
 6. Verweis auf die Methoden-Kurzreferenz (denkspur-`AGENTS.md`).
 
-Kurz, konkret, wartbar — die Datei ist Arbeitsanweisung, kein Prosa-Dokument.
-Erkenntnisse und verworfene Wege gehören nicht hierher, sondern in die Spur
+Die Datei bleibt kurz und konkret: Sie ist Arbeitsanweisung, kein
+Prosa-Dokument. Erkenntnisse und verworfene Wege gehören nicht hierher, sondern in die Spur
 (Kapitel 3): eine abgelehnte Entscheidung ist ein ADR mit Status `abgelehnt`,
 kein Prosa-Absatz.
 
@@ -151,11 +151,11 @@ generiert) oder ein Original bzw. ein echter Datensatz?*
 - **Sensible Inhalte (Gesundheit, Familie, Finanzen, echte Personendaten)
   gehören nicht in ein Git-Repo — auch nicht in ein privates.** Die
   Git-Historie vergisst nichts: Was einmal committet wurde, ist auch nach dem
-  Löschen rekonstruierbar. „Privat" ist eine Zugriffseinstellung, kein
-  Schutzversprechen. Bei Gesundheitsdaten kommt DSGVO Art. 9 hinzu.
+  Löschen rekonstruierbar, und die Sichtbarkeitseinstellung „privat" schützt
+  davor nicht. Bei Gesundheitsdaten kommt DSGVO Art. 9 hinzu.
 - **Ins Repo kommt nur das Abgeleitete, das Original bleibt draußen:**
   web-optimierte Kopien statt Asset-Originalen, synthetische Demo-Daten statt
-  Echtdaten. Das Original ist die Wahrheit, das Repo enthält die
+  Echtdaten. Das Original bleibt außerhalb; im Repo liegt nur die
   Auslieferungsform.
 - **Secrets nur in `.env` / `.env.local`** (gitignored), nie committen — auch
   nicht „kurz zum Testen". Eine committete **`.env.example`** dokumentiert,
