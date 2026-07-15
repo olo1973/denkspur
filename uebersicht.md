@@ -31,4 +31,4 @@
 
 | Nr. | Titel | Status | Datum | Tags |
 |---|---|---|---|---|
-| — | (noch keine) | | | |
+| [0001](plaene/0001-nachlese-in-die-methodentexte-tragen.md) | Die Nachlese in die Methodentexte tragen | entwurf | 2026-07-15 | methode, review |
