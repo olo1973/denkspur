@@ -13,7 +13,8 @@ Ergänzt durch: [Entscheidung 0004](0004-konsequenzen-erstes-review.md)
 
 Es existieren zwei unabhängig entstandene, jeweils bewährte Ansätze:
 
-1. **[decision-trail](https://github.com/ckluth/decision-trail)** (ckluth,
+1. **[decision-trail](https://github.com/haevg-rz/decision-trail)** (Christofer
+   Kluth, Copyright HÄVG AG,
    MIT): ein Lebenslauf für Gedanken — Idee → Vorschlag → Entscheidung (ADR)
    → Plan → Umsetzung — mit festem Querverweis-Vokabular, generierter
    Übersicht, Arbeitstagebuch und acht expliziten Promises. Stark auf der

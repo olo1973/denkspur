@@ -62,7 +62,7 @@ falls Design-Gates genutzt werden.
 
 ## v1.0 — 2026-07-06
 
-Gründung: Synthese aus decision-trail (ckluth, MIT) und privaten
+Gründung: Synthese aus decision-trail (Christofer Kluth, HÄVG AG, MIT) und privaten
 Struktur-Standards ([Entscheidung 0001](entscheidungen/0001-synthese-zweier-quellen.md)) —
 Vertrag, Struktur, Lebenslauf, Zusammenarbeit inkl. Design-Gate, Leitfaden,
 Starter-Skelett.

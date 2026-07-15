@@ -12,7 +12,7 @@ datum: 2026-07-06
 > ist, entscheidet der Rückgriff auf den Vertrag.
 
 Die Zusagen vereinen zwei Quellen: die acht Promises von
-[decision-trail](https://github.com/ckluth/decision-trail) (Zeitachse) und die
+[decision-trail](https://github.com/haevg-rz/decision-trail) (Zeitachse) und die
 fünf Grundprinzipien eines Struktur-Standards für KI-konsumierbare Ablagen
 (Raumachse). Herkunft und Zuordnung dokumentiert
 [Entscheidung 0001](../entscheidungen/0001-synthese-zweier-quellen.md).

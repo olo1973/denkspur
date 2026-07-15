@@ -3,6 +3,27 @@
 > Formloses Arbeitstagebuch, neueste Einträge zuerst. Kein Ersatz für die
 > Spur — nur der billigste Wiedereinstieg nach einer Pause.
 
+## 2026-07-15 — Attribution korrigiert
+
+Nachlese von decision-trail (v2.9–v2.16) förderte einen Fehler in unserer
+eigenen Attribution zutage: Wir nannten „ckluth" als Rechteinhaber, deren
+`LICENCE` weist aber seit dem 05.07. — also einen Tag **vor** unserem Fork —
+die Hausärztliche Vertragsgemeinschaft AG (HÄVG) aus. Der Vermerk war damit
+von Anfang an falsch, nicht durch Drift veraltet. Zudem ist das Repo nach
+`haevg-rz/decision-trail` umgezogen (der alte Pfad leitet weiter, deshalb fiel
+es nicht auf), und der Urheber schreibt sich Christofer, nicht Christopher.
+
+Korrigiert in `NOTICE`, `README`, `methode/01`, `methode/03`, `CHANGELOG` und
+— rein tatsächlich, ohne Begründung oder Entscheidung anzutasten —
+[Entscheidung 0001](entscheidungen/0001-synthese-zweier-quellen.md). Der
+Eintrag vom 2026-07-06 unten bleibt bewusst stehen, wie er war: Ein Tagebuch
+hält fest, was wir damals taten und wussten; korrigiert wird die Zusage, nicht
+die Erinnerung.
+
+Offen: die inhaltliche Nachlese selbst (fünf Kandidaten aus v2.9–v2.16, allen
+voran ADR-0037 „Pläne sind mechanische Ausführung") — noch nicht als Spur
+angelegt.
+
 ## 2026-07-07 — Stil-Lektorat
 
 Die Methodentexte (README, Leitfaden, `methode/01`–`04`) trugen erkennbar

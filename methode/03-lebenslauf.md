@@ -9,7 +9,7 @@ datum: 2026-07-06
 > Wie ein Gedanke durch das Projekt reist, von der ersten Notiz bis zur
 > abgehakten Umsetzung — und warum in sechs Monaten noch nachvollziehbar ist,
 > *warum* etwas so ist und was verworfen wurde. Dieses Kapitel übernimmt den
-> Kern von [decision-trail](https://github.com/ckluth/decision-trail)
+> Kern von [decision-trail](https://github.com/haevg-rz/decision-trail)
 > (Zusage 9: leihen statt erfinden), eingedeutscht per
 > [Entscheidung 0002](../entscheidungen/0002-deutsch-als-methodensprache.md).
 

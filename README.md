@@ -43,9 +43,10 @@ Ort und einen nachvollziehbaren Lebenslauf.
 
 denkspur ist eine Synthese aus zwei Quellen:
 
-- **[decision-trail](https://github.com/ckluth/decision-trail)** (ckluth,
-  MIT-Lizenz) — der Lebenslauf für Gedanken: Idee → Vorschlag → Entscheidung →
-  Plan → Umsetzung, das Querverweis-Vokabular und die generierte Übersicht.
+- **[decision-trail](https://github.com/haevg-rz/decision-trail)** (Christofer
+  Kluth, Copyright HÄVG AG, MIT-Lizenz) — der Lebenslauf für Gedanken: Idee →
+  Vorschlag → Entscheidung → Plan → Umsetzung, das Querverweis-Vokabular und
+  die generierte Übersicht.
 - **Private Struktur-Standards des Autors** für KI-konsumierbare Ablagen:
   das Projekt-Skelett, die Namenskonventionen, das Frontmatter-Modell, die
   Datenklassen-Regeln und die Solo/Team-Skalierung.
