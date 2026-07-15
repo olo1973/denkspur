@@ -3,6 +3,29 @@
 > Formloses Arbeitstagebuch, neueste Einträge zuerst. Kein Ersatz für die
 > Spur — nur der billigste Wiedereinstieg nach einer Pause.
 
+## 2026-07-15 — Nachlese decision-trail abgenommen
+
+[Entscheidung 0009](entscheidungen/0009-nachlese-decision-trail-v2-9-bis-v2-16.md)
+angenommen: Von fünfzehn neuen Entscheidungen der Quelle (v2.9–v2.16)
+übernehmen wir fünf. Zwei Drittel reparieren Folgen von Struktur-Entscheiden,
+die wir anders getroffen haben — der Wert der Datei liegt deshalb ebenso in
+den protokollierten Ablehnungen wie in den Übernahmen.
+
+Der Kern ist ADR-0037: Ein Plan ist mechanische Ausführung und enthält nie eine
+entscheidende Aufgabe; eine mitten in der Umsetzung auftauchende Frage geht
+zurück in die Entscheidungsstufe. Dort hat ein Agent Pläne mit Aufgaben wie
+„entscheide X" geschrieben und so unter dem Deckmantel bloßer Ausführung
+entschieden. Unser Kapitel 3.1 formulierte genauso weich wie deren ADR-0004,
+das den Vorfall nicht verhindert hat — bei uns umginge das den Freigabe-Modus
+`gespraech`.
+
+Rück-Links in 0001 und 0007 gesetzt, Übersicht regeneriert. Vier Nebenbefunde
+liegen als Ideen 0002–0005.
+
+Offen: der Plan, der 0009 austrägt — er berührt `methode/03`, `methode/04`,
+`leitfaden.md`, beide `AGENTS.md` und den Versionsmarker im Starter, dazu ein
+CHANGELOG-Eintrag mit Adopter-Migration.
+
 ## 2026-07-15 — Attribution korrigiert
 
 Nachlese von decision-trail (v2.9–v2.16) förderte einen Fehler in unserer

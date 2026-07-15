@@ -25,7 +25,7 @@
 | [0006](entscheidungen/0006-freigabe-modi.md) | Zwei Freigabe-Modi — Gespräch und PR-Gate | angenommen | 2026-07-06 | zusammenarbeit, autonomie, review |
 | [0007](entscheidungen/0007-praezisierungen-aus-dem-review.md) | Präzisierungen aus dem Review (Befunde 8, 10, 11, 13) | angenommen | 2026-07-06 | methode, review |
 | [0008](entscheidungen/0008-stil-lektorat.md) | Stil-Lektorat — KI-Klang aus den Methodentexten nehmen | angenommen | 2026-07-07 | sprache, stil |
-| [0009](entscheidungen/0009-nachlese-decision-trail-v2-9-bis-v2-16.md) | Nachlese decision-trail v2.9–v2.16 | vorgeschlagen | 2026-07-15 | methode, herkunft, review |
+| [0009](entscheidungen/0009-nachlese-decision-trail-v2-9-bis-v2-16.md) | Nachlese decision-trail v2.9–v2.16 | angenommen | 2026-07-15 | methode, herkunft, review |
 
 ## Pläne
 

@@ -8,6 +8,7 @@ tags: [methode, herkunft]
 # 0001: Synthese zweier Quellen zu einer Methode
 
 Ergänzt durch: [Entscheidung 0004](0004-konsequenzen-erstes-review.md)
+Ergänzt durch: [Entscheidung 0009](0009-nachlese-decision-trail-v2-9-bis-v2-16.md)
 
 ## Kontext
 

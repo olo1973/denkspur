@@ -1,6 +1,6 @@
 ---
 typ: entscheidung
-status: vorgeschlagen
+status: angenommen
 datum: 2026-07-15
 tags: [methode, herkunft, review]
 ---
@@ -120,7 +120,64 @@ anders getroffen haben. Drei Gruppen.
 
 ## Entscheidung
 
-(offen)
+Option 3 — selektive Nachlese. Die fünf Kandidaten aus Gruppe A werden
+übernommen, eingedeutscht und an unsere Struktur angepasst. Gruppe B und C
+werden mit der oben protokollierten Begründung nicht übernommen.
+
+**1. Ein Plan ist mechanische Ausführung** (nach ADR-0037). Er trägt eine
+bereits angenommene Entscheidung aus: Die Entscheidung ist die Spezifikation,
+der Plan das mechanische Wie. Ein Plan enthält **nie** eine entscheidende
+Aufgabe — kein „entscheide X", kein „kläre die offene Frage Y". Hängt ein Teil
+der Arbeit noch an einer offenen Frage, ist der Plan für diesen Teil schlicht
+noch nicht schreibbar. Taucht eine Frage **während** der Umsetzung auf, was
+der Normalfall ist, wird sie nie in den Plan eingefaltet, sondern geht zurück
+in die Entscheidungsstufe: die maßgebliche Entscheidung klären, per neuem ADR
+`Ergänzt:` nachziehen oder eine neue aufmachen — danach weiterarbeiten.
+**Dass** die Frage zurückgeht, gilt ausnahmslos; **welche** Form der Rückweg
+annimmt, ist Ermessen nach Größe der Frage. Ort: `methode/03`, 3.1
+(Plan-Punkt), dazu je eine Zeile in `AGENTS.md` und `starter/AGENTS.md`.
+
+**2. Die Nummernvergabe bekommt eine Prozedur** (nach ADR-0025): die Familie
+vollständig auflisten, die **höchste vergebene Nummer plus eins** nehmen — nie
+die erste Lücke, die ein Glob zufällig zeigt, nie eine aus einem verwandten
+Artefakt abgeleitete Nummer — und vor dem Schreiben prüfen, dass der Dateiname
+frei ist. Die Merge-Kollisionsregel aus
+[0007](0007-praezisierungen-aus-dem-review.md) bleibt unberührt: Sie **heilt**
+eine Kollision, diese Prozedur **vermeidet** sie. Ort: `methode/03`, 3.2.
+
+**3. Der Einstiegs-Status wird ausgeschrieben** (nach ADR-0024): Eine neue Idee
+beginnt bei `keim`, ein neuer Vorschlag bei `vorgeschlagen`, ein neuer Plan bei
+`entwurf`. Dazu die Regel, dass ein Status nur aus der eigenen Familie stammt.
+Ort: `methode/03`, 3.1, als Prosa unter der Stationen-Tabelle — die Tabelle
+selbst bleibt unangetastet, sie zeigt die Übergänge, nicht den Einstieg.
+
+**4. Artefakte entstehen aus der Vorlage, nie aus einem Geschwister** (nach
+ADR-0033). Wer ein Nachbar-Artefakt als Gerüst kopiert, erbt dessen
+Zufälligkeiten: einen falschen Status, fremde Querverweise, eine veraltete
+Form. Ein Geschwister zu **lesen**, um die Form zu prüfen, bleibt richtig; es
+als Gerüst zu **kopieren**, nicht. Ort: `methode/04` und beide `AGENTS.md`.
+
+**5. Der Leitfaden bekommt einen Abschnitt zum billigen Wiedereinstieg** (nach
+ADR-0030): wie man die Sitzung eröffnet, das Artefakt statt des Themas
+benennen, eng fragen, zur Pause investieren statt beim Wiedereinstieg,
+Knappheit als Schreib-Disziplin. Rein beratend, ohne Mechanik. Ort:
+**ausschließlich** `leitfaden.md` — nicht in `methode/`, nicht in `AGENTS.md`.
+Menschliche Hebel gehören in den Lehrtext, nicht in die Instruktion, die der
+Agent bei jeder Sitzung mitlädt.
+
+**Nicht übernommen** — Gruppe B, weil bei uns bereits gelöst: das
+Header-Format anpinnen (ADR-0026; durch unser Frontmatter gegenstandslos), das
+Instruktions-Gewicht schrumpfen (ADR-0029; unsere `AGENTS.md` ist 3 KB statt
+21 KB), die Übersicht überhaupt per Skript zu erzeugen (ihre Idee 0033; von
+uns am 2026-07-06 entschieden). Gruppe C, weil nicht übertragbar oder
+verfrüht: die Synchronisation zweier Renderings (ADR-0032, ADR-0035; wir haben
+das Kanon-Modell), `zerlegt` als Status (ADR-0027; bei einer Idee ohne
+Anwendungsfall) und die Absage an Skills (ADR-0036; für uns kein
+Handlungsbedarf).
+
+**Vertagt, nicht verworfen:** die abgeleiteten Übersichts-Sichten (ADR-0034,
+ADR-0038), sobald Pläne existieren, und der Adopter-Update-Pfad (ADR-0031),
+sobald ein zweites Projekt denkspur nutzt.
 
 ## Konsequenzen
 

@@ -7,6 +7,8 @@ tags: [methode, review]
 
 # 0007: Präzisierungen aus dem Review (Befunde 8, 10, 11, 13)
 
+Ergänzt durch: [Entscheidung 0009](0009-nachlese-decision-trail-v2-9-bis-v2-16.md)
+
 ## Kontext
 
 Vier verbliebene Review-Befunde verlangen keine Richtungsentscheidung,
