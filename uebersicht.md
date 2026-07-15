@@ -8,6 +8,10 @@
 | Nr. | Titel | Status | Datum | Tags |
 |---|---|---|---|---|
 | [0001](ideen/0001-design-gate.md) | Design-Gate für GUI-Vorhaben | befördert | 2026-07-06 | oberflaeche, abnahme |
+| [0002](ideen/0002-konformitaets-check-fuer-die-uebersicht.md) | Konformitäts-Check als Prüfmodus des Übersichts-Skripts | keim | 2026-07-15 | werkzeug, uebersicht |
+| [0003](ideen/0003-zeilenenden-der-uebersichts-skripte.md) | Die beiden Übersichts-Skripte erzeugen byte-verschiedene Dateien | keim | 2026-07-15 | werkzeug, uebersicht, fehler |
+| [0004](ideen/0004-familien-praefix-in-der-entscheidungs-ueberschrift.md) | Familien-Präfix in der Entscheidungs-Überschrift | keim | 2026-07-15 | format |
+| [0005](ideen/0005-vorschlags-ueberschrift-wandert-mit-dem-status.md) | Die Überschrift eines Vorschlags soll mit dem Status wandern | keim | 2026-07-15 | format, lebenslauf |
 
 ## Entscheidungen
 
