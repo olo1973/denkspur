@@ -3,6 +3,28 @@
 Jede Version nennt in der Zeile **Adopter-Migration**, was ein bestehendes
 denkspur-Projekt beim Update übernehmen muss (siehe `methode/04`, 4.4).
 
+## v1.4 — 2026-07-17
+
+Zeilenenden-Politik und Portabilität der Übersichts-Skripte
+([Entscheidung 0010](entscheidungen/0010-zeilenenden-und-portabilitaet-der-skripte.md),
+[Plan 0002](plaene/0002-zeilenenden-und-5-1-fix-umsetzen.md)):
+
+- **`.gitattributes`** (`* text=auto eol=lf`) im Repo-Wurzelverzeichnis und im
+  Starter: normalisiert alle Textdateien auf LF, auf allen Plattformen. Das
+  Diff-Rauschen in der generierten `uebersicht.md` verschwindet an der Wurzel.
+- **`uebersicht-generieren.ps1` läuft jetzt unter Windows PowerShell 5.1.** Der
+  UTF-8-Gedankenstrich in der „noch keine"-Zeile ist durch ASCII ersetzt, das
+  Skript trägt einen UTF-8-BOM (damit 5.1 seine Nicht-ASCII-Texte korrekt
+  liest) und liest die Artefakte mit `-Encoding UTF8`. Verifiziert: 5.1,
+  pwsh 7 und Bash erzeugen jetzt byte-identische Ausgabe.
+- Der Schluss-Umbruch beider Generatoren ist auf LF ohne BOM angeglichen; nach
+  einem Lauf bleibt `git status` sauber.
+
+**Adopter-Migration:** Die neue `.gitattributes` aus dem Starter übernehmen
+(oder eine eigene mit `* text=auto eol=lf` anlegen) und den reparierten
+`uebersicht-generieren.ps1` kopieren. Danach einmal `git add --renormalize .`
+ausführen; wo `core.autocrlf` schon aktiv war, bleibt die Welle klein.
+
 ## v1.3 — 2026-07-17
 
 Nachlese aus decision-trail v2.9–v2.16

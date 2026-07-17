@@ -1,4 +1,4 @@
-# Generiert uebersicht.md deterministisch aus den Artefakt-Koepfen
+﻿# Generiert uebersicht.md deterministisch aus den Artefakt-Koepfen
 # (siehe methode/03-lebenslauf.md, Abschnitt 3.4). Aufruf:
 #   ./skripte/uebersicht-generieren.ps1            # im Projekt-Root
 #   ./skripte/uebersicht-generieren.ps1 -Pfad <dir>
@@ -10,7 +10,7 @@ function Get-Tabelle([string]$Ordner) {
         Where-Object { $_.Name -match '^\d{4}-.*\.md$' } | Sort-Object Name
     foreach ($d in $dateien) {
         $status = ""; $datum = ""; $tags = ""; $titel = ""
-        foreach ($z in (Get-Content $d.FullName)) {
+        foreach ($z in (Get-Content $d.FullName -Encoding UTF8)) {
             if ($z -match '^status:\s*(.+)$' -and -not $status) { $status = $Matches[1].Trim() }
             elseif ($z -match '^datum:\s*(.+)$' -and -not $datum) { $datum = $Matches[1].Trim() }
             elseif ($z -match '^tags:\s*\[(.*)\]' -and -not $tags) { $tags = $Matches[1].Trim() }
@@ -21,7 +21,7 @@ function Get-Tabelle([string]$Ordner) {
         $nr = $d.Name.Substring(0, 4)
         $zeilen += "| [$nr]($Ordner/$($d.Name)) | $titel | $status | $datum | $tags |"
     }
-    if ($zeilen.Count -eq 0) { $zeilen = @("| — | (noch keine) | | | |") }
+    if ($zeilen.Count -eq 0) { $zeilen = @("| - | (noch keine) | | | |") }
     $zeilen -join "`n"
 }
 
@@ -50,5 +50,9 @@ $kopf
 $(Get-Tabelle "plaene")
 "@
 
-Set-Content -Encoding utf8 -Path (Join-Path $Pfad "uebersicht.md") -Value $inhalt
+# LF-Schluss und UTF-8 ohne BOM erzwingen, damit 5.1, pwsh 7 und bash
+# byte-gleiche Ausgabe erzeugen (Entscheidung 0010).
+$inhalt = ($inhalt -replace "`r`n", "`n") + "`n"
+$utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+[System.IO.File]::WriteAllText((Join-Path $Pfad "uebersicht.md"), $inhalt, $utf8NoBom)
 Write-Host "uebersicht.md regeneriert (Stand: $stand)"

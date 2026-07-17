@@ -1,6 +1,6 @@
 ---
 typ: plan
-status: entwurf
+status: fertig
 datum: 2026-07-17
 tags: [werkzeug, format]
 ---
@@ -17,41 +17,47 @@ sie zurück in die Entscheidungsstufe, nicht in diesen Plan.
 
 **Teil 1 — Zeilenenden-Politik**
 
-- [ ] `.gitattributes` im Repo-Wurzelverzeichnis anlegen: `* text=auto eol=lf`.
-- [ ] Dieselbe `.gitattributes` in den `starter/` legen, damit Adopter die
+- [x] `.gitattributes` im Repo-Wurzelverzeichnis anlegen: `* text=auto eol=lf`.
+- [x] Dieselbe `.gitattributes` in den `starter/` legen, damit Adopter die
       Regel über das Skelett erben.
-- [ ] `git add --renormalize .` ausführen und das Ergebnis prüfen (erwartet:
+- [x] `git add --renormalize .` ausführen und das Ergebnis prüfen (erwartet:
       keine oder minimale Index-Änderung, da `autocrlf` den Index schon auf LF
       hält).
 
 **Teil 2 — Generatoren auf LF-Schluss angleichen**
 
-- [ ] `uebersicht-generieren.ps1`: den Schluss-Umbruch auf LF bringen, damit
+- [x] `uebersicht-generieren.ps1`: den Schluss-Umbruch auf LF bringen, damit
       die Ausgabe nach einem `pwsh`-Lauf nicht mehr transient als `M`
       erscheint (z. B. via `[IO.File]::WriteAllText` mit dem bereits
       LF-getrennten `$inhalt`, ohne BOM). Die `.sh` schreibt bereits LF.
 
 **Teil 3 — 5.1-Fix (Portabilität)**
 
-- [ ] `uebersicht-generieren.ps1`, Zeile 24: den UTF-8-Gedankenstrich in
+- [x] `uebersicht-generieren.ps1`, Zeile 24: den UTF-8-Gedankenstrich in
       `| — | (noch keine) …` durch ASCII ersetzen (`-`), damit die BOM-lose
       Datei unter Windows PowerShell 5.1 parst und läuft.
-- [ ] Ausgabe-Encoding der `.ps1` explizit auf UTF-8 ohne BOM festlegen, damit
+- [x] Ausgabe-Encoding der `.ps1` explizit auf UTF-8 ohne BOM festlegen, damit
       5.1 und 7 dieselbe Datei erzeugen.
+- [x] Bei der Abnahme aufgetaucht (mechanisch, keine neue Entscheidung): 5.1
+      las die BOM-lose `.ps1` und die BOM-losen Artefakte als ANSI und
+      verhackte Umlaute/Gedankenstriche. Behoben durch UTF-8-**BOM** an der
+      `.ps1` selbst (5.1 liest sie dann als UTF-8) und `Get-Content -Encoding
+      UTF8` beim Lesen der Artefakte. Der **Ausgabe**-Datei bleibt BOM-los —
+      Skript-BOM und Ausgabe-BOM sind zwei verschiedene Dinge.
 
 **Abnahme (Verifikation, nicht Entscheidung)**
 
-- [ ] Beide Generatoren unter Windows PowerShell 5.1, pwsh 7 und Bash laufen
+- [x] Beide Generatoren unter Windows PowerShell 5.1, pwsh 7 und Bash laufen
       lassen; bestätigen: `.ps1` läuft unter 5.1, alle Läufe erzeugen
       byte-gleiche LF-Ausgabe, `git status` bleibt nach jedem Lauf sauber.
 
 **Abschluss**
 
-- [ ] `starter/AGENTS.md`: Versionsmarker auf die nächste Fassung heben.
-- [ ] `CHANGELOG.md`: Eintrag mit Adopter-Migration (neue `.gitattributes` aus
+- [x] `starter/AGENTS.md`: Versionsmarker auf die nächste Fassung heben.
+- [x] `CHANGELOG.md`: Eintrag mit Adopter-Migration (neue `.gitattributes` aus
       dem Starter übernehmen; reparierten Generator kopieren).
-- [ ] Übersicht per Skript regenerieren.
-- [ ] Status dieses Plans auf `fertig`.
+- [x] Übersicht per Skript regenerieren.
+- [x] Status dieses Plans auf `fertig`.
 
 ## Zwischenstände
 

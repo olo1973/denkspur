@@ -19,7 +19,7 @@ tabelle() {
         [ -n "$titel" ] || titel="$(sed -n 's/^# //p' "$f" | head -1)"
         zeilen+="| [$nr]($ordner/$(basename "$f")) | $titel | $status | $datum | $tags |"$'\n'
     done
-    [ -n "$zeilen" ] || zeilen="| — | (noch keine) | | | |"$'\n'
+    [ -n "$zeilen" ] || zeilen="| - | (noch keine) | | | |"$'\n'
     printf '%s' "$zeilen"
 }
 
