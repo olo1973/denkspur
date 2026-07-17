@@ -5,53 +5,54 @@ datum: 2026-07-15
 tags: [werkzeug, uebersicht, fehler]
 ---
 
-# Idee 0003: Die beiden Übersichts-Skripte erzeugen byte-verschiedene Dateien
+# Idee 0003: Die beiden Übersichts-Skripte weichen in Zeilenenden und Portabilität ab
 
 Am 2026-07-15 beim Gegenprüfen eines Merges aufgefallen: `uebersicht.md` galt
 als geändert, obwohl der sichtbare Inhalt gleich war.
 
-**Diagnose am 2026-07-17 korrigiert.** Die erste Fassung dieser Idee behauptete
-„`ps1` schreibt CRLF, `sh` schreibt LF". Das stimmt so nicht — eine Prüfung
-gegen den echten Code (beide Skripte gelesen, EOL-Zustand mit
-`git ls-files --eol` geprüft) zeigt ein anderes Bild:
+**Diagnose am 2026-07-17 praktisch verifiziert** — beide Skripte unter
+Windows PowerShell 5.1, pwsh 7.6.3 und Bash real ausgeführt, Ausgaben Byte für
+Byte verglichen. Das Ergebnis hat zwei frühere Vermutungen widerlegt:
 
+- Meine erste Fassung („`ps1` schreibt CRLF, `sh` schreibt LF") stimmt nicht.
+- Eine zweite Vermutung, die `.sh` lasse per `sed` ein `\r` aus CRLF-Quellen in
+  den Feldern stehen, stimmt ebenfalls nicht.
+
+Verifizierter Befund:
+
+- **Beide Generatoren erzeugen aus denselben Quellen byte-identischen Inhalt —
+  bis auf genau ein Byte:** den abschließenden Zeilenumbruch. `pwsh` schreibt
+  ihn über `Set-Content` als CRLF, `bash` als LF. Kein `\r` in den Feldern
+  (auch nicht auf echten CRLF-Quellen), kein BOM, keine inneren CRLF.
 - Es gibt **keine `.gitattributes`**. Beide Skripte liegen als LF im Repo, die
-  Quell-`.md` sind LF im Index, werden auf dieser Windows-Maschine per
-  `autocrlf` aber als **CRLF** ausgecheckt.
-- Die beiden Skripte gehen mit diesem `\r` **unterschiedlich** um: Die `.sh`
-  zieht die Feldwerte per `sed` aus den CRLF-Quellen und lässt das anhängende
-  `\r` **stehen** — es landet mitten in den Tabellenzeilen. Die `.ps1` streift
-  es ab (`Get-Content` trennt die Zeilenenden, `.Trim()` entfernt den Rest).
-  Aus denselben Quellen entstehen so **verschiedene** Dateien — nicht wegen der
-  Zeilenenden der Generatoren, sondern wegen ungleicher `\r`-Behandlung auf
-  CRLF-Quellen ohne angepinnte Normalisierung.
-- **Zweiter, in der ersten Fassung übersehener Befund:** Zeile 24 der `.ps1`
-  enthält einen UTF-8-Gedankenstrich (`| — | (noch keine) …`) in einer
-  BOM-losen Datei. Unter Windows PowerShell 5.1, das eine Datei ohne BOM in der
-  ANSI-Codepage liest, ist ein Nicht-ASCII-Zeichen dort mindestens ein
-  Verfälschungs-Risiko, womöglich ein Ausführungs-Stopper. (Aus einem
-  Sub-Agenten-Lauf berichtet, von mir noch nicht selbst nachgestellt.)
+  Quell-`.md` werden per `autocrlf` als CRLF ausgecheckt. Das Diff-Rauschen,
+  das den Verdacht auslöste, entsteht aus dem Zusammenspiel von diesem
+  Trailing-Terminator-Unterschied und der fehlenden angepinnten Normalisierung
+  — nicht aus einem Feld-`\r`.
+- **Schwerer wiegt ein separater Befund: `uebersicht-generieren.ps1` läuft
+  unter Windows PowerShell 5.1 gar nicht.** Zeile 24 (`| — | (noch keine) …`)
+  enthält einen UTF-8-Gedankenstrich in einer BOM-losen Datei. 5.1 liest die
+  Datei in der ANSI-Codepage, ein fehldekodiertes Byte bricht das
+  String-Literal vorzeitig ab, die folgenden `|` werden als Pipe-Operatoren
+  gelesen — harter Parser-Fehler, kein Zeichen wird geschrieben. Reproduziert
+  mit echter Fehlermeldung. 5.1 ist die Default-PowerShell auf jedem Windows;
+  der Starter verspricht Werkzeugneutralität, hält sie hier also nicht.
 
-Das ist mehr als Kosmetik: Wer im Team zwischen PowerShell und Shell wechselt,
-produziert bei jedem Lauf einen Diff über die ganze Datei — Rauschen in genau
-dem Artefakt, das laut Zusage 2 die verlässliche Ableitung sein soll. Und es
-ist dieselbe Fehlerklasse, die decision-trails ADR-0026 beschreibt: zwei
-Renderings derselben Wahrheit laufen auseinander, weil niemand die Form
-angepinnt hat. Dass ausgerechnet unser Gegenmittel gegen Handarbeit den Fehler
-trägt, ist die eigentliche Pointe.
+Das Diff-Rauschen ist mehr als Kosmetik: Es trifft genau das Artefakt, das
+laut Zusage 2 die verlässliche Ableitung sein soll. Und der 5.1-Stopp macht
+das Skript für einen Teil der Adopter schlicht unbrauchbar.
 
-Mögliche Richtung: `.gitattributes` mit einer expliziten Zeilenenden-Politik
-(die Wurzel des Diff-Rauschens), das `\r` in der `.sh`-Extraktion strippen,
-damit beide Skripte gleich behandeln, und die `.ps1` 5.1-fest machen
-(ASCII-Ersatz für den Gedankenstrich oder BOM, Ausgabe-Encoding festlegen).
+Mögliche Richtung: `.gitattributes` mit expliziter Zeilenenden-Politik (die
+Wurzel des Rauschens), die beiden Generatoren auf denselben Schluss-Umbruch
+bringen, und die `.ps1` 5.1-fest machen (ASCII-Ersatz für den Gedankenstrich
+oder BOM plus festgelegtes Ausgabe-Encoding).
 
-**Kein reiner Bugfix ohne ADR** (anders als in der ersten Fassung vermutet):
-Die Zeilenenden-Politik in `.gitattributes` setzt eine repo-weite Konvention,
-die jeder Adopter über den Starter erbt — diese Wahl gehört protokolliert. Die
-reine `\r`-Bereinigung darf als mechanischer Teil mitlaufen; der Rahmen ist ein
-schlanker ADR.
+**Kein reiner Bugfix ohne ADR:** Die Zeilenenden-Politik in `.gitattributes`
+setzt eine repo-weite Konvention, die jeder Adopter über den Starter erbt —
+diese Wahl gehört protokolliert. Der 5.1-Fix und die Terminator-Angleichung
+dürfen als mechanischer Teil mitlaufen; der Rahmen ist ein schlanker ADR.
 
 Offen: Die allgemeinere Frage, wie zwei Skript-Varianten überhaupt verlässlich
-identisch bleiben und wer das prüft, gehört in die Diskussion um den
+gleich bleiben und wer das prüft, gehört in die Diskussion um den
 Konformitäts-Check (siehe
 [Idee 0002](0002-konformitaets-check-fuer-die-uebersicht.md)).
