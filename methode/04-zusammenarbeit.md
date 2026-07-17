@@ -37,6 +37,13 @@ eiserne Regel aus 3.3 gilt modusunabhängig: Auch auf einem Branch werden
 gemergte Entscheidungen nur per `Ergänzt:`/`Ersetzt:` fortgeschrieben, nie
 umgeschrieben.
 
+**Woraus der Agent schöpft.** Ein neues Artefakt entsteht aus der **Vorlage**
+(`_templates/`), nie aus einem Geschwister-Artefakt als Gerüst. Wer die
+Nachbardatei kopiert und überschreibt, erbt deren Zufälligkeiten (einen
+falschen Status, fremde Querverweise, eine veraltete Form) und schleppt sie
+weiter. Ein Geschwister zu **lesen**, um die Form zu prüfen, bleibt richtig; es
+als Gerüst zu **kopieren**, nicht.
+
 ## 4.2 Das Design-Gate: Oberflächen als Bild abnehmen
 
 Anwendung von Zusage 7 (Abnahme am günstigsten Medium) auf Vorhaben mit

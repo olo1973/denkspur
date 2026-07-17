@@ -1,6 +1,6 @@
 ---
 typ: plan
-status: entwurf
+status: fertig
 datum: 2026-07-15
 tags: [methode, review]
 ---
@@ -21,53 +21,53 @@ sondern zurück in die Entscheidungsstufe.
 
 **Regel 1 — Ein Plan ist mechanische Ausführung**
 
-- [ ] `methode/03`, 3.1: Plan-Punkt umschreiben. Die weiche Fassung
+- [x] `methode/03`, 3.1: Plan-Punkt umschreiben. Die weiche Fassung
       („übersetzt eine angenommene Entscheidung in konkrete Aufgaben") wird zur
       klaren: nie eine entscheidende Aufgabe, eine auftauchende Frage geht
       zurück in die Entscheidungsstufe, Rückweg-Form nach Ermessen.
-- [ ] `AGENTS.md`: eine Zeile in die harten Regeln.
-- [ ] `starter/AGENTS.md`: dieselbe Zeile in den Methoden-Block.
+- [x] `AGENTS.md`: eine Zeile in die harten Regeln.
+- [x] `starter/AGENTS.md`: dieselbe Zeile in den Methoden-Block.
 
 **Regel 2 — Nummernvergabe per `max+1`**
 
-- [ ] `methode/03`, 3.2: die Prozedur vor die bestehende Merge-Kollisionsregel
+- [x] `methode/03`, 3.2: die Prozedur vor die bestehende Merge-Kollisionsregel
       setzen (erst vermeiden, dann heilen). Der Absatz zur Merge-Regel aus
       [0007](../entscheidungen/0007-praezisierungen-aus-dem-review.md) bleibt
       wörtlich stehen.
-- [ ] `AGENTS.md` und `starter/AGENTS.md`: Nummern-Regel um `max+1` ergänzen.
+- [x] `AGENTS.md` und `starter/AGENTS.md`: Nummern-Regel um `max+1` ergänzen.
 
 **Regel 3 — Einstiegs-Status und Familien-Exklusivität**
 
-- [ ] `methode/03`, 3.1: Prosa **unter** der Stationen-Tabelle. Die Tabelle
+- [x] `methode/03`, 3.1: Prosa **unter** der Stationen-Tabelle. Die Tabelle
       bleibt unangetastet — sie zeigt Übergänge, nicht den Einstieg.
 
 **Regel 4 — Artefakte aus der Vorlage, nie aus einem Geschwister**
 
-- [ ] `methode/04`, 4.1: an das Bestätigungs-Gate anschließen — dort steht,
+- [x] `methode/04`, 4.1: an das Bestätigungs-Gate anschließen — dort steht,
       wann der Agent handeln darf, hier kommt hinzu, woraus er schöpft.
-- [ ] `AGENTS.md` und `starter/AGENTS.md`: je eine Zeile.
+- [x] `AGENTS.md` und `starter/AGENTS.md`: je eine Zeile.
 
 **Regel 5 — Wiedereinstieg (nur Lehrtext)**
 
-- [ ] `leitfaden.md`: neuer Abschnitt nach „6. Der Agent als Schreibkraft mit
+- [x] `leitfaden.md`: neuer Abschnitt nach „6. Der Agent als Schreibkraft mit
       Freigabe-Regel", mit den fünf in 0009 benannten Hebeln. Die Folge-
       abschnitte 7 und 8 werden umnummeriert.
-- [ ] Gegenprüfen, dass nichts davon in `methode/` oder eine `AGENTS.md`
+- [x] Gegenprüfen, dass nichts davon in `methode/` oder eine `AGENTS.md`
       gewandert ist — 0009 verlangt den Abschnitt ausschließlich im Leitfaden.
 
 **Abschluss**
 
-- [ ] `starter/AGENTS.md`: Versionsmarker `v1.2` → `v1.3`.
-- [ ] `CHANGELOG.md`: Eintrag `v1.3` mit Adopter-Migration. Nach der
+- [x] `starter/AGENTS.md`: Versionsmarker `v1.2` → `v1.3`.
+- [x] `CHANGELOG.md`: Eintrag `v1.3` mit Adopter-Migration. Nach der
       Konvention des Repos ein Minor-Schritt, weil Regeln hinzukommen
       (v1.2.1 war reine Textoberfläche). Die Migration ist ausformuliert
       auszuweisen: Regeln 1–4 sind Verhaltensregeln zum Verinnerlichen, keine
       Artefakt-Rückmigration; wer den Starter kopiert hat, gleicht den
       Methoden-Block seiner `AGENTS.md` an.
-- [ ] Übersicht per Skript regenerieren.
-- [ ] Stil-Durchgang über die geänderten Absätze nach
+- [x] Übersicht per Skript regenerieren.
+- [x] Stil-Durchgang über die geänderten Absätze nach
       [0008](../entscheidungen/0008-stil-lektorat.md).
-- [ ] Status dieses Plans auf `fertig`.
+- [x] Status dieses Plans auf `fertig`.
 
 ## Zwischenstände
 

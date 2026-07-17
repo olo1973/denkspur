@@ -27,7 +27,12 @@ Dieses Projekt folgt [denkspur](https://github.com/olo1973/denkspur).
 2. **Lebenslauf:** Idee (`ideen/NNNN-*.md`: keim → befördert/verworfen) →
    Entscheidung als ADR (`entscheidungen/NNNN-*.md`: vorgeschlagen →
    angenommen/abgelehnt) → Plan (`plaene/NNNN-*.md`: entwurf → aktiv →
-   fertig/abgebrochen). Vorlagen in `_templates/`.
+   fertig/abgebrochen). Neue Artefakte aus den Vorlagen in `_templates/`
+   schreiben, nie ein Geschwister als Gerüst kopieren. Neue Nummer = höchste
+   der Familie + 1 (nie die erste Lücke), Dateiname vorher auf frei prüfen.
+   Ein Plan führt **nur mechanisch** aus — nie „entscheide X" oder „kläre Y";
+   eine bei der Umsetzung auftauchende Frage geht zurück in die
+   Entscheidungsstufe.
 3. **Nie wegeditieren:** Entschiedenes wird per `Ergänzt:`/`Ersetzt:` durch
    neue ADRs fortgeschrieben, nie umgeschrieben.
 4. **Vokabular:** `Eltern-Idee:` · `Befördert zu:`/`Hervorgegangen aus:` ·
@@ -58,4 +63,4 @@ Dieses Projekt folgt [denkspur](https://github.com/olo1973/denkspur).
 
 Methoden-Block oben: abgeleitete Kurzfassung; maßgeblich ist `methode/` im
 denkspur-Repo. Vor einem Update dessen CHANGELOG lesen („Adopter-Migration").
-denkspur-Stand: **v1.2**
+denkspur-Stand: **v1.3**

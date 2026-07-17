@@ -34,6 +34,14 @@ flowchart LR
 | **Plan** | `plaene/NNNN-*.md` | `entwurf` → `aktiv` |
 | **Umsetzung** | dieselbe Datei | → `fertig` / `abgebrochen` |
 
+Die Tabelle zeigt die **Übergänge**; der **Einstieg** steht hier in Worten,
+weil ein Pfeil ihn nur andeutet. Eine neue Idee beginnt bei `keim`, ein neuer
+Vorschlag bei `vorgeschlagen`, ein neuer Plan bei `entwurf` (Entscheidung und
+Umsetzung sind Fortsetzungen in derselben Datei, kein eigener Einstieg). Und
+ein Statuswert stammt **nur aus der eigenen Familie**: Eine Idee ist nie
+`vorgeschlagen` oder `entwurf`, ein Plan nie `vorgeschlagen` oder `keim`. Wer
+ein Artefakt anlegt, nennt erst die Familie, dann den Status aus deren Spalte.
+
 - **Idee**: hält einen Gedanken zum minimalen Preis fest; drei Zeilen
   reichen. Ideen dürfen Kinder bekommen (`Eltern-Idee:`), die Verwandtschaft
   bleibt verlinkt (Zusage 6).
@@ -43,9 +51,18 @@ flowchart LR
 - **Entscheidung**: dieselbe Datei, der Status kippt auf `angenommen` oder
   `abgelehnt`. Begründung und Ergebnis bleiben beieinander — auch eine
   **abgelehnte** Option ist dokumentiert, damit niemand sie erneut aufrollt.
-- **Plan**: übersetzt eine angenommene Entscheidung in konkrete Aufgaben
-  (Checkboxen). Bei Vorhaben mit Benutzeroberfläche enthält der Plan ein
-  **Design-Gate** (Kapitel 4.2).
+- **Plan**: trägt eine angenommene Entscheidung mechanisch aus. Die
+  Entscheidung ist die Spezifikation, der Plan das Wie, in konkrete Aufgaben
+  zerlegt (Checkboxen). Ein Plan enthält **nie** eine entscheidende
+  Aufgabe — kein „entscheide X", kein „kläre die offene Frage Y". Hängt ein
+  Teil der Arbeit noch an einer offenen Frage, ist der Plan für diesen Teil
+  noch nicht schreibbar. Taucht eine Frage **während** der Umsetzung auf, was
+  normal ist, wird sie nie in den Plan eingefaltet, sondern geht zurück in die
+  Entscheidungsstufe: die maßgebliche Entscheidung klären, per neuem ADR
+  `Ergänzt:` nachziehen oder eine neue aufmachen, dann weiterarbeiten. **Dass**
+  die Frage zurückgeht, gilt ausnahmslos; **welche** Form der Rückweg annimmt,
+  ist Ermessen nach Größe der Frage. Bei Vorhaben mit Benutzeroberfläche
+  enthält der Plan ein **Design-Gate** (Kapitel 4.2).
 - **Umsetzung**: die Checkboxen wandern; am Ende `fertig` oder `abgebrochen`.
 
 ## 3.2 Artefakt-Format
@@ -73,7 +90,15 @@ Hervorgegangen aus: [Idee 0007](../ideen/0007-merkliste.md)
 **Nummerierung:** vierstellig, fortlaufend, je Familie unabhängig
 (`ideen/0007-…` und `entscheidungen/0009-…` haben nichts miteinander zu tun).
 Nummern drücken **nur Reihenfolge** aus, nie Beziehungen — Beziehungen drücken
-ausschließlich die Links aus. Vergeben daher zwei parallele Branches dieselbe
+ausschließlich die Links aus.
+
+**Die nächste Nummer** ist die höchste bereits vergebene der Familie **plus
+eins** — nie die erste Lücke, die ein flüchtiger Blick (oder ein Glob) zufällig
+zeigt, und nie eine aus einem verwandten Artefakt abgeleitete Nummer. Vor dem
+Schreiben prüfen, dass der Dateiname noch frei ist. Das vermeidet Kollisionen;
+der folgende Absatz heilt die, die trotzdem entstehen.
+
+Vergeben zwei parallele Branches dieselbe
 Nummer, wird die Kollision **beim Merge aufgelöst**: Wer sie vorfindet, gibt
 dem eigenen Artefakt die nächste freie Nummer und passt dessen Links an;
 das ist verlustfrei, weil die Nummer nichts als Reihenfolge trägt

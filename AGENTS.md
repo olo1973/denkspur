@@ -24,6 +24,10 @@ an. Für Agenten, die hier (oder in einem denkspur-Projekt) arbeiten, gilt:
 6. **Kanon:** `methode/` ist die maßgebliche Fassung. `leitfaden.md`, diese
    Datei und `starter/AGENTS.md` sind abgeleitete Renderings — bei
    Widerspruch gilt `methode/`, behoben wird im Rendering.
+7. **Pläne sind mechanische Ausführung:** Ein Plan enthält nie eine
+   entscheidende Aufgabe („entscheide X", „kläre Y"). Taucht eine Frage bei
+   der Umsetzung auf, geht sie zurück in die Entscheidungsstufe (ADR klären,
+   ergänzen oder neu), statt in den Plan eingefaltet zu werden.
 
 ## Der Lebenslauf (Kurzform)
 
@@ -34,6 +38,8 @@ an. Für Agenten, die hier (oder in einem denkspur-Projekt) arbeiten, gilt:
 | Plan → Umsetzung | `plaene/NNNN-*.md` | `entwurf` → `aktiv` → `fertig` / `abgebrochen` |
 
 Nummern: vierstellig, je Familie unabhängig, drücken nur Reihenfolge aus.
+Nächste Nummer = höchste vergebene der Familie + 1 (nie die erste Lücke),
+Dateiname vor dem Schreiben auf frei prüfen.
 Metadaten im YAML-Frontmatter (`typ`, `status`, `datum`, optional `tags`);
 Beziehungs-Links als klickbare Zeilen unter der H1.
 
@@ -47,6 +53,8 @@ wechselseitig) · `Ersetzt:` / `Ersetzt durch:` (ADR↔ADR, wechselseitig) ·
 ## Konventionen
 
 - Dateinamen: kleingeschrieben, bindestrich-getrennt, keine Umlaute/ß/Leerzeichen.
+- Neues Artefakt aus der Vorlage (`_templates/`) schreiben, nie ein
+  Geschwister als Gerüst kopieren (erbt dessen Status, Links, veraltete Form).
 - Querverweise als echte relative Markdown-Links, nie als toter Text.
 - Sprache: Deutsch, sachlich-direkt, keine Emojis.
 - UI-Vorhaben: Plan enthält ein Design-Gate (visuelle Abnahme vor Code) —

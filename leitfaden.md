@@ -225,7 +225,29 @@ Gespräch, der Agent strukturiert, legt Dateien an, pflegt Links und
 Die Regeln für Agenten stehen maschinenlesbar in [`AGENTS.md`](AGENTS.md),
 in jedem denkspur-Projekt, auch in diesem.
 
-## 7. Wann denkspur nicht lohnt
+## 7. Billig wieder einsteigen
+
+Die Methode verspricht, dass ein Projekt nach einer Pause günstig
+wiederaufnehmbar ist. Die Mechanik dafür steht bereit — generierte Übersicht,
+Logbuch, greppbare Köpfe. Wie teuer der Wiedereinstieg wirklich wird, hängt
+aber an ein paar Handgriffen, die nur der Mensch in der Hand hat:
+
+1. **Wie man die Sitzung eröffnet, ist der größte Hebel.** „Nimm Plan 0001
+   wieder auf — lies seine Datei und die Übersicht" kostet ein paar Reads.
+   „Erklär mir mal das Projekt" lädt den ganzen Bestand.
+2. **Das Artefakt benennen, nicht das Thema.** „Was entscheidet 0009?" öffnet
+   eine Datei; „Was haben wir zu decision-trail beschlossen?" sucht durch
+   alle Texte.
+3. **Eng fragen.** Eine umrissene Frage wird zu einem Grep über die Köpfe,
+   keine Synthese über alles.
+4. **Zur Pause investieren, nicht beim Wiedereinstieg.** Eine frisch
+   regenerierte Übersicht und ein Absatz Logbuch, geschrieben solange der
+   Kontext noch da ist, machen jeden späteren Einstieg billig.
+5. **Knappheit ist eine Schreib-Disziplin.** Man verfasst und gibt die
+   Artefakte frei; knappe sind billiger zu schreiben und billiger
+   wiederaufzunehmen. Zusage 2 (Ökonomie) zahlt sich an beiden Enden aus.
+
+## 8. Wann denkspur nicht lohnt
 
 Zur Methode gehört auch, ihre Grenzen zu benennen. denkspur kostet Disziplin
 und ein paar Minuten je Artefakt. Das lohnt nicht immer:
@@ -243,7 +265,7 @@ zweite Session oder ein zweiter Monat ins Spiel kommt. Die Methode skaliert
 auch nach unten: Wer nur `entscheidungen/` übernimmt, deckt schon den
 teuersten Verlust ab — vergessene Entscheidungsbegründungen.
 
-## 8. Selbst anfangen
+## 9. Selbst anfangen
 
 1. Inhalt von [`starter/`](starter/) ins eigene Projekt kopieren.
 2. `README.md` (die Tür) und `AGENTS.md` (die Regeln) füllen — die

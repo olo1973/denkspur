@@ -1,7 +1,7 @@
 # Übersicht
 
 > Generierter Statusindex — wird komplett aus den Artefakt-Köpfen neu
-> erzeugt, nie von Hand gepflegt. **Stand: 2026-07-15**
+> erzeugt, nie von Hand gepflegt. **Stand: 2026-07-17**
 
 ## Ideen
 
@@ -31,4 +31,4 @@
 
 | Nr. | Titel | Status | Datum | Tags |
 |---|---|---|---|---|
-| [0001](plaene/0001-nachlese-in-die-methodentexte-tragen.md) | Die Nachlese in die Methodentexte tragen | entwurf | 2026-07-15 | methode, review |
+| [0001](plaene/0001-nachlese-in-die-methodentexte-tragen.md) | Die Nachlese in die Methodentexte tragen | fertig | 2026-07-15 | methode, review |

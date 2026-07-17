@@ -3,6 +3,31 @@
 Jede Version nennt in der Zeile **Adopter-Migration**, was ein bestehendes
 denkspur-Projekt beim Update übernehmen muss (siehe `methode/04`, 4.4).
 
+## v1.3 — 2026-07-17
+
+Nachlese aus decision-trail v2.9–v2.16
+([Entscheidung 0009](entscheidungen/0009-nachlese-decision-trail-v2-9-bis-v2-16.md)),
+fünf übernommene Regeln in die Methodentexte getragen
+([Plan 0001](plaene/0001-nachlese-in-die-methodentexte-tragen.md)):
+
+- **Pläne sind mechanische Ausführung** (`methode/03`, 3.1): Ein Plan enthält
+  nie eine entscheidende Aufgabe; eine bei der Umsetzung auftauchende Frage
+  geht zurück in die Entscheidungsstufe.
+- **Nummernvergabe per `max+1`** mit Existenzprüfung (`methode/03`, 3.2), vor
+  die bestehende Merge-Kollisionsregel gesetzt — erst vermeiden, dann heilen.
+- **Einstiegs-Status ausgeschrieben** und Familien-Exklusivität (`methode/03`,
+  3.1): neue Idee `keim`, neuer Vorschlag `vorgeschlagen`, neuer Plan
+  `entwurf`; kein Status aus einer fremden Familie.
+- **Artefakte aus der Vorlage**, nie aus einem Geschwister (`methode/04`, 4.1).
+- **Wiedereinstiegs-Hebel** als neuer Leitfaden-Abschnitt 7 (rein beratend,
+  nur im Lehrtext).
+
+**Adopter-Migration:** Die Regeln 1–4 sind Verhaltensregeln zum Verinnerlichen
+— keine Artefakt-Rückmigration nötig, kein bestehendes Artefakt wird
+umgeschrieben. Wer den Starter kopiert hat, gleicht den Methoden-Block seiner
+`AGENTS.md` an (neue Zeilen zu Plänen, Nummernvergabe und Vorlagen) und
+übernimmt den Versionsmarker **v1.3**.
+
 ## v1.2.1 — 2026-07-07
 
 Stil-Lektorat der Methodentexte
