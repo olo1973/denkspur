@@ -1,6 +1,6 @@
 ---
 typ: entscheidung
-status: vorgeschlagen
+status: angenommen
 datum: 2026-07-17
 tags: [werkzeug, format]
 ---
@@ -59,7 +59,26 @@ ADR und kein stiller Bugfix.
 
 ## Entscheidung
 
-(offen)
+**Option 1 — `.gitattributes` mit `* text=auto eol=lf`.** Das Repo normalisiert
+alle Textdateien auf LF, im Index wie im Working Tree, auf allen Plattformen.
+LF ist der plattformübliche Repo-Standard; die Regel ist deklarativ und liegt
+an einer Stelle, statt in zwei getrennt gepflegten Skripten.
+
+Vor der Annahme praktisch durchgespielt (Klon des Repos, Regel angelegt,
+Normalisierung ausgelöst und beide Generatoren erneut laufen lassen):
+
+- **Keine einmalige Welle.** `git add --renormalize` staged null Dateien, weil
+  `core.autocrlf=true` den Index bereits auf LF hält. Nach frischem Checkout
+  sind alle zuvor 57 CRLF-Dateien sauber LF — die im Vorschlag befürchtete
+  Normalisierungs-Welle bleibt aus.
+- **`.gitattributes` allein genügt nicht.** Nach einem `pwsh`-Lauf zeigt
+  `git status` transient noch ein `M`, weil `Set-Content` einen CRLF-Schluss
+  anhängt; Git normalisiert es beim `add` auf LF. Um auch diesen Zustand
+  sauber zu halten, müssen beide Generatoren denselben LF-Schluss schreiben.
+
+Damit sind die drei Teile des Fixes bestätigt als nötig **und** zusammen
+ausreichend: die `.gitattributes`-Regel, die Angleichung des Schluss-Umbruchs
+beider Generatoren auf LF, und der 5.1-Fix des Gedankenstrichs.
 
 ## Konsequenzen
 

@@ -26,10 +26,11 @@
 | [0007](entscheidungen/0007-praezisierungen-aus-dem-review.md) | Präzisierungen aus dem Review (Befunde 8, 10, 11, 13) | angenommen | 2026-07-06 | methode, review |
 | [0008](entscheidungen/0008-stil-lektorat.md) | Stil-Lektorat — KI-Klang aus den Methodentexten nehmen | angenommen | 2026-07-07 | sprache, stil |
 | [0009](entscheidungen/0009-nachlese-decision-trail-v2-9-bis-v2-16.md) | Nachlese decision-trail v2.9–v2.16 | angenommen | 2026-07-15 | methode, herkunft, review |
-| [0010](entscheidungen/0010-zeilenenden-und-portabilitaet-der-skripte.md) | Zeilenenden- und Portabilitäts-Politik für die generierten Artefakte | vorgeschlagen | 2026-07-17 | werkzeug, format |
+| [0010](entscheidungen/0010-zeilenenden-und-portabilitaet-der-skripte.md) | Zeilenenden- und Portabilitäts-Politik für die generierten Artefakte | angenommen | 2026-07-17 | werkzeug, format |
 
 ## Pläne
 
 | Nr. | Titel | Status | Datum | Tags |
 |---|---|---|---|---|
 | [0001](plaene/0001-nachlese-in-die-methodentexte-tragen.md) | Die Nachlese in die Methodentexte tragen | fertig | 2026-07-15 | methode, review |
+| [0002](plaene/0002-zeilenenden-und-5-1-fix-umsetzen.md) | Zeilenenden-Politik und 5.1-Fix umsetzen | entwurf | 2026-07-17 | werkzeug, format |
