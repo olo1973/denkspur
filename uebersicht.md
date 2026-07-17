@@ -9,7 +9,7 @@
 |---|---|---|---|---|
 | [0001](ideen/0001-design-gate.md) | Design-Gate für GUI-Vorhaben | befördert | 2026-07-06 | oberflaeche, abnahme |
 | [0002](ideen/0002-konformitaets-check-fuer-die-uebersicht.md) | Konformitäts-Check als Prüfmodus des Übersichts-Skripts | keim | 2026-07-15 | werkzeug, uebersicht |
-| [0003](ideen/0003-zeilenenden-der-uebersichts-skripte.md) | Die beiden Übersichts-Skripte weichen in Zeilenenden und Portabilität ab | keim | 2026-07-15 | werkzeug, uebersicht, fehler |
+| [0003](ideen/0003-zeilenenden-der-uebersichts-skripte.md) | Die beiden Übersichts-Skripte weichen in Zeilenenden und Portabilität ab | befördert | 2026-07-15 | werkzeug, uebersicht, fehler |
 | [0004](ideen/0004-familien-praefix-in-der-entscheidungs-ueberschrift.md) | Familien-Präfix in der Entscheidungs-Überschrift | keim | 2026-07-15 | format |
 | [0005](ideen/0005-vorschlags-ueberschrift-wandert-mit-dem-status.md) | Die Überschrift eines Vorschlags soll mit dem Status wandern | keim | 2026-07-15 | format, lebenslauf |
 
@@ -26,6 +26,7 @@
 | [0007](entscheidungen/0007-praezisierungen-aus-dem-review.md) | Präzisierungen aus dem Review (Befunde 8, 10, 11, 13) | angenommen | 2026-07-06 | methode, review |
 | [0008](entscheidungen/0008-stil-lektorat.md) | Stil-Lektorat — KI-Klang aus den Methodentexten nehmen | angenommen | 2026-07-07 | sprache, stil |
 | [0009](entscheidungen/0009-nachlese-decision-trail-v2-9-bis-v2-16.md) | Nachlese decision-trail v2.9–v2.16 | angenommen | 2026-07-15 | methode, herkunft, review |
+| [0010](entscheidungen/0010-zeilenenden-und-portabilitaet-der-skripte.md) | Zeilenenden- und Portabilitäts-Politik für die generierten Artefakte | vorgeschlagen | 2026-07-17 | werkzeug, format |
 
 ## Pläne
 

@@ -1,11 +1,13 @@
 ---
 typ: idee
-status: keim
+status: befördert
 datum: 2026-07-15
 tags: [werkzeug, uebersicht, fehler]
 ---
 
 # Idee 0003: Die beiden Übersichts-Skripte weichen in Zeilenenden und Portabilität ab
+
+Befördert zu: [Entscheidung 0010](../entscheidungen/0010-zeilenenden-und-portabilitaet-der-skripte.md)
 
 Am 2026-07-15 beim Gegenprüfen eines Merges aufgefallen: `uebersicht.md` galt
 als geändert, obwohl der sichtbare Inhalt gleich war.
