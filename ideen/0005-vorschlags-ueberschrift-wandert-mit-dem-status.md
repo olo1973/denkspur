@@ -1,11 +1,13 @@
 ---
 typ: idee
-status: keim
+status: befördert
 datum: 2026-07-15
 tags: [format, lebenslauf]
 ---
 
 # Idee 0005: Die Überschrift eines Vorschlags soll mit dem Status wandern
+
+Befördert zu: [Entscheidung 0011](../entscheidungen/0011-vorschlags-ueberschrift-wandert-mit-dem-status.md)
 
 Beim Schreiben von
 [Entscheidung 0009](../entscheidungen/0009-nachlese-decision-trail-v2-9-bis-v2-16.md)
