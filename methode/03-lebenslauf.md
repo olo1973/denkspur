@@ -47,10 +47,16 @@ ein Artefakt anlegt, nennt erst die Familie, dann den Status aus deren Spalte.
   bleibt verlinkt (Zusage 6).
 - **Vorschlag**: eine gereifte Idee wird zum ADR (Architecture Decision
   Record nach Nygard): Kontext, Entscheidungstreiber, erwogene Optionen,
-  Entscheidung, Konsequenzen. Vorlage: `_templates/entscheidung-vorlage.md`.
+  Entscheidung, Konsequenzen. Der Empfehlungs-Abschnitt trägt schon im
+  Vorschlag die Überschrift `## Vorgeschlagene Entscheidung` und nennt dort die
+  empfohlene Entscheidung — kein leerer Abschnitt, kein „(offen)"
+  ([Entscheidung 0011](../entscheidungen/0011-vorschlags-ueberschrift-wandert-mit-dem-status.md)).
+  Vorlage: `_templates/entscheidung-vorlage.md`.
 - **Entscheidung**: dieselbe Datei, der Status kippt auf `angenommen` oder
-  `abgelehnt`. Begründung und Ergebnis bleiben beieinander — auch eine
-  **abgelehnte** Option ist dokumentiert, damit niemand sie erneut aufrollt.
+  `abgelehnt`; bei Annahme wandert die Überschrift `## Vorgeschlagene
+  Entscheidung` mit zu `## Entscheidung`. Begründung und Ergebnis bleiben
+  beieinander — auch eine **abgelehnte** Option ist dokumentiert, damit niemand
+  sie erneut aufrollt.
 - **Plan**: trägt eine angenommene Entscheidung mechanisch aus. Die
   Entscheidung ist die Spezifikation, der Plan das Wie, in konkrete Aufgaben
   zerlegt (Checkboxen). Ein Plan enthält **nie** eine entscheidende

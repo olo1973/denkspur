@@ -3,6 +3,24 @@
 Jede Version nennt in der Zeile **Adopter-Migration**, was ein bestehendes
 denkspur-Projekt beim Update übernehmen muss (siehe `methode/04`, 4.4).
 
+## v1.5 — 2026-07-18
+
+Wandernde Überschrift des Entscheidungs-Abschnitts
+([Entscheidung 0011](entscheidungen/0011-vorschlags-ueberschrift-wandert-mit-dem-status.md),
+[Plan 0003](plaene/0003-ueberschrift-wandert-umsetzen.md)):
+
+- Ein Vorschlag trägt den Empfehlungs-Abschnitt jetzt unter der Überschrift
+  `## Vorgeschlagene Entscheidung` und nennt dort schon seine Empfehlung; der
+  Platzhalter „(offen)" entfällt. Beim Kippen auf `angenommen` wird die
+  Überschrift zu `## Entscheidung` — Überschrift und Status wandern zusammen,
+  ein leerer Abschnitt kann nicht mehr entstehen.
+- Betroffen sind `_templates/entscheidung-vorlage.md` und die
+  Stationsbeschreibung in `methode/03-lebenslauf.md`.
+- **Adopter-Migration:** die geänderte `entscheidung-vorlage.md` aus dem
+  Starter übernehmen; die eigene Vorlage auf die wandernde Überschrift
+  angleichen. Bereits angenommene Entscheidungen bleiben unberührt (sie tragen
+  schon `## Entscheidung`).
+
 ## v1.4 — 2026-07-17
 
 Zeilenenden-Politik und Portabilität der Übersichts-Skripte

@@ -23,9 +23,14 @@ Ersetzt: [Entscheidung NNNN](NNNN-name.md)
 2. <Option>
 3. <Option>
 
-## Entscheidung
+## Vorgeschlagene Entscheidung
 
-<Was gilt ab jetzt, konkret. Bei Status `vorgeschlagen`: „(offen)".>
+<!-- Beim Kippen des Status auf `angenommen` diese Überschrift zu
+     „## Entscheidung" umbenennen — Überschrift und Status wandern zusammen
+     (Entscheidung 0011). -->
+
+<Die empfohlene Entscheidung, konkret formuliert — schon hier im Vorschlag,
+nicht erst nach der Annahme. Was ab Annahme gilt.>
 
 ## Konsequenzen
 

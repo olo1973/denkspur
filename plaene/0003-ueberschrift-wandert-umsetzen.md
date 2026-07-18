@@ -1,6 +1,6 @@
 ---
 typ: plan
-status: entwurf
+status: fertig
 datum: 2026-07-18
 tags: [format, lebenslauf]
 ---
@@ -18,18 +18,18 @@ Entscheidungsstufe, nicht in diesen Plan.
 
 **Teil 1 — Vorlage `entscheidung-vorlage.md`**
 
-- [ ] Die Abschnitts-Überschrift `## Entscheidung` in
+- [x] Die Abschnitts-Überschrift `## Entscheidung` in
       `## Vorgeschlagene Entscheidung` umbenennen (die Vorlage beginnt bei
       Status `vorgeschlagen`, trägt also die Vorschlags-Form).
-- [ ] Den Platzhaltertext des Abschnitts ändern: den Hinweis „Bei Status
+- [x] Den Platzhaltertext des Abschnitts ändern: den Hinweis „Bei Status
       `vorgeschlagen`: „(offen)"" entfernen und durch eine Anweisung ersetzen,
       die den Vorschlag auffordert, hier seine Empfehlung zu formulieren.
-- [ ] Einen Kommentar ergänzen, der den Umbenenn-Schritt festhält: beim Kippen
+- [x] Einen Kommentar ergänzen, der den Umbenenn-Schritt festhält: beim Kippen
       auf `angenommen` wird die Überschrift zu `## Entscheidung`.
 
 **Teil 2 — `methode/03-lebenslauf.md`**
 
-- [ ] Die Stationsbeschreibungen „Vorschlag" und „Entscheidung" (Abschnitt 3.1)
+- [x] Die Stationsbeschreibungen „Vorschlag" und „Entscheidung" (Abschnitt 3.1)
       um die wandernde Überschrift ergänzen: Ein Vorschlag trägt
       `## Vorgeschlagene Entscheidung`, die beim Kippen auf `angenommen` zu
       `## Entscheidung` wird — kein leerer Abschnitt mehr, die Empfehlung steht
@@ -37,12 +37,12 @@ Entscheidungsstufe, nicht in diesen Plan.
 
 **Abschluss**
 
-- [ ] `starter/AGENTS.md`: Versionsmarker von `v1.4` auf `v1.5` heben.
-- [ ] `CHANGELOG.md`: Eintrag `v1.5` mit Adopter-Migration (geänderte
+- [x] `starter/AGENTS.md`: Versionsmarker von `v1.4` auf `v1.5` heben.
+- [x] `CHANGELOG.md`: Eintrag `v1.5` mit Adopter-Migration (geänderte
       `entscheidung-vorlage.md` aus dem Starter übernehmen; die eigene Vorlage
       auf die wandernde Überschrift angleichen).
-- [ ] Übersicht per Skript regenerieren.
-- [ ] Status dieses Plans auf `fertig`.
+- [x] Übersicht per Skript regenerieren.
+- [x] Status dieses Plans auf `fertig`.
 
 ## Zwischenstände
 
