@@ -3,6 +3,32 @@
 > Formloses Arbeitstagebuch, neueste Einträge zuerst. Kein Ersatz für die
 > Spur — nur der billigste Wiedereinstieg nach einer Pause.
 
+## 2026-07-18 — Format-Ideen umgesetzt (v1.5), Konformitäts-Check geplant
+
+Drei Ideen durch den Lebenslauf gebracht:
+
+- **Idee 0005 → Entscheidung 0011 → Plan 0003 (fertig, v1.5):** Die Überschrift
+  des Empfehlungs-Abschnitts wandert mit dem Status —
+  `## Vorgeschlagene Entscheidung` im Vorschlag, `## Entscheidung` bei Annahme.
+  Vorlage `entscheidung-vorlage.md` und `methode/03` angepasst; „(offen)" ist
+  weg. Die neue Form wurde auf 0011 und 0012 gleich selbst angewandt.
+- **Offener Rand als Idee 0006 (keim) geparkt:** 0011 regelt nur den
+  Annahme-Übergang; was die Überschrift bei `abgelehnt` tut, ist offen.
+- **Idee 0002 → Entscheidung 0012 (angenommen) → Plan 0004 (entwurf):**
+  Konformitäts-Check als `-Pruefen`-Flag am Übersichts-Skript (teilt den Parser,
+  meldet Befunde + Exit-Code, beide Sprachen mit Fixture-Parität wie 0010). Fünf
+  Prüfungen; Prüfung 5 (Status ↔ Überschrift) spart `abgelehnt` aus, bis
+  Idee 0006 entschieden ist.
+
+**Nächster Schritt:** Plan 0004 ausführen — echte Skript-Arbeit in zwei Sprachen
+(PS + Bash), Parser teilen, Prüfmodus bauen, isolierte Fixture kaputter
+Artefakte anlegen und Parität über PS 5.1 / pwsh 7 / Bash verifizieren, dann
+Versionsmarker v1.6 und CHANGELOG. Ist im Modus `gespraech` freigabepflichtig
+und war beim Session-Ende noch nicht begonnen.
+
+**Weitere offene Ideen (keim):** 0004 (Familien-Präfix in der Entscheidungs-H1),
+0006 (Ablehnungs-Fall der Überschrift).
+
 ## 2026-07-15 — Nachlese decision-trail abgenommen
 
 [Entscheidung 0009](entscheidungen/0009-nachlese-decision-trail-v2-9-bis-v2-16.md)
