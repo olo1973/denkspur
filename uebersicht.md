@@ -35,3 +35,4 @@
 |---|---|---|---|---|
 | [0001](plaene/0001-nachlese-in-die-methodentexte-tragen.md) | Die Nachlese in die Methodentexte tragen | fertig | 2026-07-15 | methode, review |
 | [0002](plaene/0002-zeilenenden-und-5-1-fix-umsetzen.md) | Zeilenenden-Politik und 5.1-Fix umsetzen | fertig | 2026-07-17 | werkzeug, format |
+| [0003](plaene/0003-ueberschrift-wandert-umsetzen.md) | Wandernde Entscheidungs-Überschrift umsetzen | entwurf | 2026-07-18 | format, lebenslauf |
