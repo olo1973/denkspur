@@ -12,6 +12,7 @@
 | [0003](ideen/0003-zeilenenden-der-uebersichts-skripte.md) | Die beiden Übersichts-Skripte weichen in Zeilenenden und Portabilität ab | befördert | 2026-07-15 | werkzeug, uebersicht, fehler |
 | [0004](ideen/0004-familien-praefix-in-der-entscheidungs-ueberschrift.md) | Familien-Präfix in der Entscheidungs-Überschrift | keim | 2026-07-15 | format |
 | [0005](ideen/0005-vorschlags-ueberschrift-wandert-mit-dem-status.md) | Die Überschrift eines Vorschlags soll mit dem Status wandern | befördert | 2026-07-15 | format, lebenslauf |
+| [0006](ideen/0006-ueberschrift-bei-ablehnung.md) | Was die Überschrift bei einer Ablehnung tut | keim | 2026-07-18 | format, lebenslauf |
 
 ## Entscheidungen
 
