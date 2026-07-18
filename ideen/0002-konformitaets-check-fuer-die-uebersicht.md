@@ -1,11 +1,13 @@
 ---
 typ: idee
-status: keim
+status: befördert
 datum: 2026-07-15
 tags: [werkzeug, uebersicht]
 ---
 
 # Idee 0002: Konformitäts-Check als Prüfmodus des Übersichts-Skripts
+
+Befördert zu: [Entscheidung 0012](../entscheidungen/0012-konformitaets-check-pruefmodus.md)
 
 Aus der Nachlese von decision-trail
 ([Entscheidung 0009](../entscheidungen/0009-nachlese-decision-trail-v2-9-bis-v2-16.md),
