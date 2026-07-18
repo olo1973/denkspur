@@ -63,4 +63,4 @@ Dieses Projekt folgt [denkspur](https://github.com/olo1973/denkspur).
 
 Methoden-Block oben: abgeleitete Kurzfassung; maßgeblich ist `methode/` im
 denkspur-Repo. Vor einem Update dessen CHANGELOG lesen („Adopter-Migration").
-denkspur-Stand: **v1.5**
+denkspur-Stand: **v1.6**

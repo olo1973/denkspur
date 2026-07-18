@@ -13,6 +13,7 @@
 | [0004](ideen/0004-familien-praefix-in-der-entscheidungs-ueberschrift.md) | Familien-Präfix in der Entscheidungs-Überschrift | keim | 2026-07-15 | format |
 | [0005](ideen/0005-vorschlags-ueberschrift-wandert-mit-dem-status.md) | Die Überschrift eines Vorschlags soll mit dem Status wandern | befördert | 2026-07-15 | format, lebenslauf |
 | [0006](ideen/0006-ueberschrift-bei-ablehnung.md) | Was die Überschrift bei einer Ablehnung tut | keim | 2026-07-18 | format, lebenslauf |
+| [0007](ideen/0007-pruefmodus-im-kanon-verankern.md) | Den Prüfmodus im Kanon verankern | keim | 2026-07-18 | werkzeug, methode, uebersicht |
 
 ## Entscheidungen
 
@@ -38,4 +39,4 @@
 | [0001](plaene/0001-nachlese-in-die-methodentexte-tragen.md) | Die Nachlese in die Methodentexte tragen | fertig | 2026-07-15 | methode, review |
 | [0002](plaene/0002-zeilenenden-und-5-1-fix-umsetzen.md) | Zeilenenden-Politik und 5.1-Fix umsetzen | fertig | 2026-07-17 | werkzeug, format |
 | [0003](plaene/0003-ueberschrift-wandert-umsetzen.md) | Wandernde Entscheidungs-Überschrift umsetzen | fertig | 2026-07-18 | format, lebenslauf |
-| [0004](plaene/0004-konformitaets-check-umsetzen.md) | Konformitäts-Check als Prüfmodus umsetzen | entwurf | 2026-07-18 | werkzeug, uebersicht |
+| [0004](plaene/0004-konformitaets-check-umsetzen.md) | Konformitäts-Check als Prüfmodus umsetzen | fertig | 2026-07-18 | werkzeug, uebersicht |

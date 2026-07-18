@@ -1,0 +1,7 @@
+ideen/0002-doppelte-nummer-zweite.md: doppelte Nummer 0002 (auch: ideen/0002-doppelte-nummer-erste.md)
+ideen/0003-toter-link.md: toter Link -> ../entscheidungen/0099-gibt-es-nicht.md
+ideen/0004-falsche-kopfnummer.md: Ueberschrift-Nummer 0009 passt nicht zum Dateinamen 0004
+ideen/0005-fremder-status.md: Status 'entwurf' gehoert nicht zur Familie ideen
+entscheidungen/0002-vorschlag-mit-falscher-ueberschrift.md: Status 'vorgeschlagen' verlangt Abschnitt '## Vorgeschlagene Entscheidung'
+plaene/0002-kopf-ohne-nummer.md: Ueberschrift ohne Nummer
+Konformitaets-Check: 6 Befund(e) in 11 Artefakten.

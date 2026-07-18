@@ -3,6 +3,36 @@
 Jede Version nennt in der Zeile **Adopter-Migration**, was ein bestehendes
 denkspur-Projekt beim Update übernehmen muss (siehe `methode/04`, 4.4).
 
+## v1.6 — 2026-07-18
+
+Konformitäts-Check als Prüfmodus des Übersichts-Skripts
+([Entscheidung 0012](entscheidungen/0012-konformitaets-check-pruefmodus.md),
+[Plan 0004](plaene/0004-konformitaets-check-umsetzen.md)):
+
+- **Neuer Schalter `-Pruefen`** an `uebersicht-generieren.ps1` und `.sh`. Ohne
+  ihn erzeugen die Skripte wie bisher `uebersicht.md`; mit ihm schreiben sie
+  nichts, sondern melden Befunde und enden bei mindestens einem Befund mit
+  Exit-Code 1 (sauber: 0). Damit taugt der Modus unverändert für einen
+  pre-commit-Hook oder CI.
+- **Fünf Prüfungen:** Nummern-Dubletten je Familie, tote relative
+  Markdown-Links, Überschrift-Nummer gegen Dateinamen, Statuswert aus der
+  eigenen Familie, und bei Entscheidungen Status gegen Abschnitts-Überschrift
+  (`vorgeschlagen` → `## Vorgeschlagene Entscheidung`, `angenommen` →
+  `## Entscheidung`). Der Fall `abgelehnt` bleibt ausgespart, bis
+  [Idee 0006](ideen/0006-ueberschrift-bei-ablehnung.md) entschieden ist.
+- Beide Modi teilen sich einen Parser — ein zweites Parsing wäre selbst die
+  Drift-Quelle, die der Check bekämpft. Die Erzeugung ist byte-identisch zu
+  v1.5 (nachgeprüft unter 5.1, pwsh 7 und Bash).
+- Der Check **erkennt, er heilt nicht**: Beheben bleibt Handarbeit.
+- Die Fixture absichtlich kaputter Artefakte liegt unter `_pruefung/` in
+  diesem Repo, nicht im Starter.
+
+**Adopter-Migration:** Beide `uebersicht-generieren`-Skripte aus dem Starter
+neu übernehmen und den Versionsmarker auf **v1.6** setzen. Kein Artefakt muss
+angefasst werden — der Prüfmodus verändert nichts, er meldet nur. Wer ihn zum
+ersten Mal auf einen gewachsenen Bestand loslässt, rechnet mit Befunden aus
+der Zeit vor dem Check; sie abzuarbeiten ist eigene Arbeit, kein Update-Schritt.
+
 ## v1.5 — 2026-07-18
 
 Wandernde Überschrift des Entscheidungs-Abschnitts

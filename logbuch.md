@@ -3,6 +3,33 @@
 > Formloses Arbeitstagebuch, neueste Einträge zuerst. Kein Ersatz für die
 > Spur — nur der billigste Wiedereinstieg nach einer Pause.
 
+## 2026-07-18 (abends) — Plan 0004 ausgeführt: Konformitäts-Check steht (v1.6)
+
+Der Prüfmodus ist gebaut. `uebersicht-generieren.ps1`/`.sh` nehmen jetzt
+`-Pruefen`: dann schreiben sie nichts, melden Befunde und enden mit Exit 1
+(sauber 0). Beide Modi teilen einen Parser; die Erzeugung blieb byte-identisch
+zu v1.5, in allen drei Laufzeiten nachgemessen.
+
+- **Fixture** unter `_pruefung/fixture/` — jede der fünf Prüfungen schlägt
+  mindestens einmal an, dazu Kontrollfälle, die *nicht* anschlagen dürfen
+  (externer Link, reiner Anker, `abgelehnt` bei Prüfung 5). Sechs erwartete
+  Befunde, festgehalten in `_pruefung/erwartete-befunde.txt`.
+- **Parität bestätigt:** Bash, pwsh 7 und Windows PowerShell 5.1 geben auf der
+  Fixture zeichengleich dasselbe aus. Gegen das reale Repo: keine Befunde bei
+  22 Artefakten — der Bestand ist konform.
+- Versionsmarker **v1.6**, CHANGELOG-Eintrag mit Adopter-Migration; die Fixture
+  bleibt bewusst außerhalb von `starter/`.
+
+**Offener Rand:** In `methode/` steht der Prüfmodus nirgends — 3.4 beschreibt
+nur die Erzeugung. Weil die AGENTS-Dateien abgeleitete Renderings sind, wäre
+eine Ergänzung eine Methoden-Änderung und gehört durch die Entscheidungsstufe.
+Festgehalten als [Idee 0007](ideen/0007-pruefmodus-im-kanon-verankern.md) —
+mit der offenen Kernfrage, ob der Kanon den Modus nur *beschreibt* oder das
+Konformhalten auch *verlangt*.
+
+**Weitere offene Ideen (keim):** 0004 (Familien-Präfix in der Entscheidungs-H1),
+0006 (Ablehnungs-Fall der Überschrift), 0007 (Prüfmodus im Kanon).
+
 ## 2026-07-18 — Format-Ideen umgesetzt (v1.5), Konformitäts-Check geplant
 
 Drei Ideen durch den Lebenslauf gebracht:
