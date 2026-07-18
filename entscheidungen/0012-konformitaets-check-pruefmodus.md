@@ -1,6 +1,6 @@
 ---
 typ: entscheidung
-status: vorgeschlagen
+status: angenommen
 datum: 2026-07-18
 tags: [werkzeug, uebersicht]
 ---
@@ -39,7 +39,7 @@ zweifach gemachte Zusage ein.
    Doppelung sauber, kostet aber eine dritte Datei je Sprache; für den jetzigen
    Umfang überbaut.
 
-## Vorgeschlagene Entscheidung
+## Entscheidung
 
 **Option 1 — Prüfmodus als `-Pruefen`-Flag am bestehenden Skript.** Ohne Flag
 erzeugt es wie bisher `uebersicht.md`; mit Flag schreibt es nichts, sondern

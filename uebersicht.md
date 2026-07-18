@@ -29,7 +29,7 @@
 | [0009](entscheidungen/0009-nachlese-decision-trail-v2-9-bis-v2-16.md) | Nachlese decision-trail v2.9–v2.16 | angenommen | 2026-07-15 | methode, herkunft, review |
 | [0010](entscheidungen/0010-zeilenenden-und-portabilitaet-der-skripte.md) | Zeilenenden- und Portabilitäts-Politik für die generierten Artefakte | angenommen | 2026-07-17 | werkzeug, format |
 | [0011](entscheidungen/0011-vorschlags-ueberschrift-wandert-mit-dem-status.md) | Die Überschrift des Entscheidungs-Abschnitts wandert mit dem Status | angenommen | 2026-07-18 | format, lebenslauf |
-| [0012](entscheidungen/0012-konformitaets-check-pruefmodus.md) | Konformitäts-Check als Prüfmodus des Übersichts-Skripts | vorgeschlagen | 2026-07-18 | werkzeug, uebersicht |
+| [0012](entscheidungen/0012-konformitaets-check-pruefmodus.md) | Konformitäts-Check als Prüfmodus des Übersichts-Skripts | angenommen | 2026-07-18 | werkzeug, uebersicht |
 
 ## Pläne
 
